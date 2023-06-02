@@ -13,10 +13,8 @@
   "enabled": true,
   "branchPrefix": "dependencies/",
   "labels": ["dependencies :package:"],
-  "prHourlyLimit": 5,
   "assignees": ["Rangoow"],
   "reviewers": ["Rangoow"],
-  "prConcurrentLimit": 5 ,
   "minimumReleaseAge": "10 days" ,
   "enabledManagers": ["npm", "github-actions", "nvm"],
   "npm": {
