@@ -28,6 +28,6 @@ jobs:
       - name: Build affected
         run: npx nx affected -t build --parallel=3
 
-      - name: Build-storybook affected
+      - name: Build storybook affected
         run: npx nx affected -t build-storybook --parallel=3 --configuration=ci
 
