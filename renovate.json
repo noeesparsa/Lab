@@ -15,7 +15,6 @@
   "branchPrefix": "dependencies/",
   "labels": ["dependencies :package:"],
   "prHourlyLimit": 1,
-  "schedule": ["every weekend"],
   "assignees": ["Rangoow"],
   "reviewers": ["Rangoow"],
 
