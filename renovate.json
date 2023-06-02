@@ -1,8 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
-    ":automergePatch"
+    "config:base"
   ],
   "separateMajorMinor": true,
   "separateMultipleMajor": true,
@@ -35,10 +34,12 @@
   },
   "patch": {
     "branchPrefix": "dependencies/patch/",
+    "automerge": true,
     "enabled": true
   },
   "pin": {
     "branchPrefix": "dependencies/pin/",
+    "automerge": true,
     "enabled": true
   },
   "lockFileMaintenance": {
