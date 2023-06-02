@@ -16,7 +16,7 @@
   "prHourlyLimit": 5,
   "assignees": ["Rangoow"],
   "reviewers": ["Rangoow"],
-  "prConcurrentLimit": 1,
+  "prConcurrentLimit": 5 ,
   "minimumReleaseAge": "10 days" ,
   "enabledManagers": ["npm", "github-actions", "nvm"],
   "npm": {
@@ -46,6 +46,7 @@
   "lockFileMaintenance": {
     "branchPrefix": "dependencies/lock-file/",
     "enabled": true,
+    "automerge": true,
     "rebaseWhen": "behind-base-branch"
   },
   "vulnerabilityAlerts": {
@@ -53,6 +54,7 @@
     "enabled": true,
     "rebaseWhen": "behind-base-branch"
   },
+  "automergeType": "pr",
   "packageRules": [
     {
       "matchDepTypes": ["dependencies", "peerDependencies", "devDependencies"],
