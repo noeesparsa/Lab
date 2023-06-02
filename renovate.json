@@ -12,6 +12,7 @@
   "respectLatest": true,
   "enabled": true,
   "prHourlyLimit": 2,
+  "prCreation": "immediate",
   "branchConcurrentLimit": 2,
   "branchPrefix": "dependencies/",
   "labels": ["dependencies :package:"],
