@@ -17,6 +17,7 @@
   "assignees": ["Rangoow"],
   "reviewers": ["Rangoow"],
   "prConcurrentLimit": 1,
+  "minimumReleaseAge": "10 days" ,
   "enabledManagers": ["npm", "github-actions", "nvm"],
   "npm": {
     "enabled": true,
