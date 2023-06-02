@@ -1,15 +1,9 @@
-import { render } from '@testing-library/react';
-
 import App from './app';
+import { renderWithRouter } from '../tests/render-with-router';
 
 describe('App', () => {
-  it('should render successfully', () => {
-    const { baseElement } = render(<App />);
-    expect(baseElement).toBeTruthy();
-  });
-
-  it('should have a greeting as the title', () => {
-    const { getByText } = render(<App />);
-    expect(getByText(/Welcome react-lab/gi)).toBeTruthy();
+  it('should render correctly', async (): Promise<void> => {
+    const result = await renderWithRouter(<App />);
+    expect(result).toMatchSnapshot();
   });
 });
