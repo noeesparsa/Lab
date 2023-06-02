@@ -1,0 +1,13 @@
+github:
+  - '.github/**/*'
+javascript:
+  - '**/*.js'
+  - '**/*.jsx'
+typescript:
+  - '**/*.ts'
+  - '**/*.tsx'
+apps:
+  - ' apps/**/*'
+libs:
+  - ' libs/**/*'
+
