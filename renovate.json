@@ -11,7 +11,7 @@
   "ignoreUnstable": true,
   "respectLatest": true,
   "enabled": true,
-  "prHourlyLimit": 5,
+  "prHourlyLimit": 0,
   "branchPrefix": "dependencies/",
   "labels": ["dependencies :package:"],
   "assignees": ["Rangoow"],
