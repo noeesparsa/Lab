@@ -1,12 +1,14 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
+import './app.module.scss';
 
-import NxWelcome from './nx-welcome';
+import { Outlet } from 'react-router-dom';
+import { Navbar } from '@laboratory/react-components';
+import logo from '../assets/logo.png';
 
 export function App() {
   return (
     <div>
-      <NxWelcome title="react-lab" />
+      <Navbar logo={logo} redirection={'/'} />
+      <Outlet />
     </div>
   );
 }

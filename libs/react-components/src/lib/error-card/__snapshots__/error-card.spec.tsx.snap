@@ -1,0 +1,565 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ErrorCard > should have a projection 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="vtmn-container vtmn-flex vtmn-h-screen vtmn-mx-auto"
+      >
+        <div
+          class="vtmn-mx-auto gt-tablet:vtmn-my-auto vtmn-p-5"
+        >
+          <div
+            class="vtmn-card-container"
+          >
+            <div
+              class="vtmn-card vtmn-card_variant--top-image"
+            >
+              <div
+                class="vtmn-card_image vtmn-card_image--full"
+              >
+                <img
+                  alt="Error"
+                  src="https://media.istockphoto.com/id/1345443906/fr/photo/symbole-de-panneau-davertissement-jaune-ou-alerte-de-danger-de-s%C3%A9curit%C3%A9-avertissement-ic%C3%B4ne.jpg?s=612x612&w=0&k=20&c=odJNq2qu0GXQ_8DNeHQuioOrnyXBnrJ6cNngCFwP9H4="
+                />
+              </div>
+              <div
+                class="vtmn-card_content"
+              >
+                <h2
+                  class="vtmn-card_content--title"
+                >
+                  Title
+                </h2>
+                <span
+                  class="vtmn-card_content--body"
+                >
+                  <p
+                    role="paragraph"
+                  >
+                    Projection
+                  </p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="vtmn-container vtmn-flex vtmn-h-screen vtmn-mx-auto"
+    >
+      <div
+        class="vtmn-mx-auto gt-tablet:vtmn-my-auto vtmn-p-5"
+      >
+        <div
+          class="vtmn-card-container"
+        >
+          <div
+            class="vtmn-card vtmn-card_variant--top-image"
+          >
+            <div
+              class="vtmn-card_image vtmn-card_image--full"
+            >
+              <img
+                alt="Error"
+                src="https://media.istockphoto.com/id/1345443906/fr/photo/symbole-de-panneau-davertissement-jaune-ou-alerte-de-danger-de-s%C3%A9curit%C3%A9-avertissement-ic%C3%B4ne.jpg?s=612x612&w=0&k=20&c=odJNq2qu0GXQ_8DNeHQuioOrnyXBnrJ6cNngCFwP9H4="
+              />
+            </div>
+            <div
+              class="vtmn-card_content"
+            >
+              <h2
+                class="vtmn-card_content--title"
+              >
+                Title
+              </h2>
+              <span
+                class="vtmn-card_content--body"
+              >
+                <p
+                  role="paragraph"
+                >
+                  Projection
+                </p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`ErrorCard > should have a title 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="vtmn-container vtmn-flex vtmn-h-screen vtmn-mx-auto"
+      >
+        <div
+          class="vtmn-mx-auto gt-tablet:vtmn-my-auto vtmn-p-5"
+        >
+          <div
+            class="vtmn-card-container"
+          >
+            <div
+              class="vtmn-card vtmn-card_variant--top-image"
+            >
+              <div
+                class="vtmn-card_image vtmn-card_image--full"
+              >
+                <img
+                  alt="Error"
+                  src="https://media.istockphoto.com/id/1345443906/fr/photo/symbole-de-panneau-davertissement-jaune-ou-alerte-de-danger-de-s%C3%A9curit%C3%A9-avertissement-ic%C3%B4ne.jpg?s=612x612&w=0&k=20&c=odJNq2qu0GXQ_8DNeHQuioOrnyXBnrJ6cNngCFwP9H4="
+                />
+              </div>
+              <div
+                class="vtmn-card_content"
+              >
+                <h2
+                  class="vtmn-card_content--title"
+                >
+                  Title
+                </h2>
+                <span
+                  class="vtmn-card_content--body"
+                >
+                  Children
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="vtmn-container vtmn-flex vtmn-h-screen vtmn-mx-auto"
+    >
+      <div
+        class="vtmn-mx-auto gt-tablet:vtmn-my-auto vtmn-p-5"
+      >
+        <div
+          class="vtmn-card-container"
+        >
+          <div
+            class="vtmn-card vtmn-card_variant--top-image"
+          >
+            <div
+              class="vtmn-card_image vtmn-card_image--full"
+            >
+              <img
+                alt="Error"
+                src="https://media.istockphoto.com/id/1345443906/fr/photo/symbole-de-panneau-davertissement-jaune-ou-alerte-de-danger-de-s%C3%A9curit%C3%A9-avertissement-ic%C3%B4ne.jpg?s=612x612&w=0&k=20&c=odJNq2qu0GXQ_8DNeHQuioOrnyXBnrJ6cNngCFwP9H4="
+              />
+            </div>
+            <div
+              class="vtmn-card_content"
+            >
+              <h2
+                class="vtmn-card_content--title"
+              >
+                Title
+              </h2>
+              <span
+                class="vtmn-card_content--body"
+              >
+                Children
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`ErrorCard > should have an image 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="vtmn-container vtmn-flex vtmn-h-screen vtmn-mx-auto"
+      >
+        <div
+          class="vtmn-mx-auto gt-tablet:vtmn-my-auto vtmn-p-5"
+        >
+          <div
+            class="vtmn-card-container"
+          >
+            <div
+              class="vtmn-card vtmn-card_variant--top-image"
+            >
+              <div
+                class="vtmn-card_image vtmn-card_image--full"
+              >
+                <img
+                  alt="Error"
+                  src="https://media.istockphoto.com/id/1345443906/fr/photo/symbole-de-panneau-davertissement-jaune-ou-alerte-de-danger-de-s%C3%A9curit%C3%A9-avertissement-ic%C3%B4ne.jpg?s=612x612&w=0&k=20&c=odJNq2qu0GXQ_8DNeHQuioOrnyXBnrJ6cNngCFwP9H4="
+                />
+              </div>
+              <div
+                class="vtmn-card_content"
+              >
+                <h2
+                  class="vtmn-card_content--title"
+                >
+                  Title
+                </h2>
+                <span
+                  class="vtmn-card_content--body"
+                >
+                  Children
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="vtmn-container vtmn-flex vtmn-h-screen vtmn-mx-auto"
+    >
+      <div
+        class="vtmn-mx-auto gt-tablet:vtmn-my-auto vtmn-p-5"
+      >
+        <div
+          class="vtmn-card-container"
+        >
+          <div
+            class="vtmn-card vtmn-card_variant--top-image"
+          >
+            <div
+              class="vtmn-card_image vtmn-card_image--full"
+            >
+              <img
+                alt="Error"
+                src="https://media.istockphoto.com/id/1345443906/fr/photo/symbole-de-panneau-davertissement-jaune-ou-alerte-de-danger-de-s%C3%A9curit%C3%A9-avertissement-ic%C3%B4ne.jpg?s=612x612&w=0&k=20&c=odJNq2qu0GXQ_8DNeHQuioOrnyXBnrJ6cNngCFwP9H4="
+              />
+            </div>
+            <div
+              class="vtmn-card_content"
+            >
+              <h2
+                class="vtmn-card_content--title"
+              >
+                Title
+              </h2>
+              <span
+                class="vtmn-card_content--body"
+              >
+                Children
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`ErrorCard > should renders correctly 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="vtmn-container vtmn-flex vtmn-h-screen vtmn-mx-auto"
+      >
+        <div
+          class="vtmn-mx-auto gt-tablet:vtmn-my-auto vtmn-p-5"
+        >
+          <div
+            class="vtmn-card-container"
+          >
+            <div
+              class="vtmn-card vtmn-card_variant--top-image"
+            >
+              <div
+                class="vtmn-card_image vtmn-card_image--full"
+              >
+                <img
+                  alt="Error"
+                  src="https://media.istockphoto.com/id/1345443906/fr/photo/symbole-de-panneau-davertissement-jaune-ou-alerte-de-danger-de-s%C3%A9curit%C3%A9-avertissement-ic%C3%B4ne.jpg?s=612x612&w=0&k=20&c=odJNq2qu0GXQ_8DNeHQuioOrnyXBnrJ6cNngCFwP9H4="
+                />
+              </div>
+              <div
+                class="vtmn-card_content"
+              >
+                <h2
+                  class="vtmn-card_content--title"
+                >
+                  Title
+                </h2>
+                <span
+                  class="vtmn-card_content--body"
+                >
+                  Children
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="vtmn-container vtmn-flex vtmn-h-screen vtmn-mx-auto"
+    >
+      <div
+        class="vtmn-mx-auto gt-tablet:vtmn-my-auto vtmn-p-5"
+      >
+        <div
+          class="vtmn-card-container"
+        >
+          <div
+            class="vtmn-card vtmn-card_variant--top-image"
+          >
+            <div
+              class="vtmn-card_image vtmn-card_image--full"
+            >
+              <img
+                alt="Error"
+                src="https://media.istockphoto.com/id/1345443906/fr/photo/symbole-de-panneau-davertissement-jaune-ou-alerte-de-danger-de-s%C3%A9curit%C3%A9-avertissement-ic%C3%B4ne.jpg?s=612x612&w=0&k=20&c=odJNq2qu0GXQ_8DNeHQuioOrnyXBnrJ6cNngCFwP9H4="
+              />
+            </div>
+            <div
+              class="vtmn-card_content"
+            >
+              <h2
+                class="vtmn-card_content--title"
+              >
+                Title
+              </h2>
+              <span
+                class="vtmn-card_content--body"
+              >
+                Children
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
