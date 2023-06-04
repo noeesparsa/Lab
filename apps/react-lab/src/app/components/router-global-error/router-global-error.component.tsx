@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import React, { ReactNode, useMemo } from 'react';
 import { isRouteErrorResponse, useRouteError } from 'react-router-dom';
 import { ErrorCard } from '@laboratory/react-components';
@@ -9,23 +8,23 @@ export default function RouterGlobalError(): React.ReactElement {
   let children: ReactNode = ``;
 
   if (isRouteErrorResponse(error)) {
+    const { status, statusText, data } = error;
+
     children = (
       <>
         <p>
-          <b>Error {error.status}</b>
-          {error.statusText ? `: ${error.statusText}` : ``}
+          <b>Error {status}</b>
+          {statusText && `: ${statusText}`}
         </p>
-        {error.data && _.isString(error.data) ? (
-          <p className="vtmn-typo_caption-1 linqueo-color-grey">{error.data} </p>
-        ) : (
-          ``
+
+        {typeof data === 'string' && (
+          <p className="vtmn-typo_caption-1 linqueo-color-grey">{data}</p>
         )}
-        {error.data && _.isPlainObject(error.data) ? (
+
+        {typeof data === 'object' && (
           <pre>
-            <code>{JSON.stringify(error.data, null, 2)}</code>
-          </pre>
-        ) : (
-          ``
+          <code>{JSON.stringify(data, null, 2)}</code>
+        </pre>
         )}
       </>
     );
