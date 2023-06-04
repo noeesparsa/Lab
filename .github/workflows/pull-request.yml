@@ -37,6 +37,7 @@ jobs:
           CC_TEST_REPORTER_ID: ${{secrets.CC_TEST_REPORTER_ID}}
         with:
           debug: true
+          coverageCommand: npx nx affected -t test --parallel=3 --configuration=ci
           coverageLocations: |
             ${{github.workspace}}/coverage/apps/lcov.info:lcov
             ${{github.workspace}}/coverage/libs/lcov.info:lcov
