@@ -1,4 +1,4 @@
-import RouterGlobalError from './router-global-error-message.component';
+import RouterGlobalError from './router-global-error.component';
 import { renderWithRouter } from '../../../tests/render-with-router';
 
 describe(`routerGlobalError`, (): void => {
