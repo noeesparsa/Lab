@@ -12,11 +12,11 @@ export default function RouterGlobalError(): React.ReactElement {
     children = (
       <>
         <p>
-          Error {error.status}
+          <b>Error {error.status}</b>
           {error.statusText ? `: ${error.statusText}` : ``}
         </p>
         {error.data && _.isString(error.data) ? (
-          <p className="vtmn-typo_caption-1 linqueo-color-grey">{error.data}</p>
+          <p className="vtmn-typo_caption-1 linqueo-color-grey">{error.data} </p>
         ) : (
           ``
         )}
