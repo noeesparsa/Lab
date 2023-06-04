@@ -31,3 +31,13 @@ jobs:
       - name: Build storybook affected
         run: npx nx affected -t build-storybook --parallel=3 --configuration=ci
 
+      - name: Publish code coverage
+        uses: paambaati/codeclimate-action@v4.0.0
+        env:
+          CC_TEST_REPORTER_ID: ${{secrets.CC_TEST_REPORTER_ID}}
+        with:
+          debug: true
+          coverageLocations: |
+            ${{github.workspace}}/coverage/apps/lcov.info:lcov
+            ${{github.workspace}}/coverage/libs/lcov.info:lcov
+

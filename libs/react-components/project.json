@@ -28,6 +28,11 @@
         "passWithNoTests": true,
         "coverage": true,
         "reportsDirectory": "../../coverage/libs/react-components"
+      },
+      "configurations": {
+        "ci": {
+          "coverage": true
+        }
       }
     },
     "storybook": {
