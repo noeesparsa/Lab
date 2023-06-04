@@ -4,16 +4,17 @@ coverage:
   precision: 2
   status:
     project:
-      default: false
+      default:
+        target: auto
+        threshold: 0%
       react-lab:
         target: 90%
-        paths: "apps/react-lab/src/app"
+        paths:
+          - "apps/react-lab/src/app"
       react-components:
-        paths: "libs/react-components/src/lib"
+        paths:
+          - "libs/react-components/src/lib"
         target: 90%
-  branches:
-    - main
-
 comment:
   layout: 'reach, diff, flags, files'
   behavior: new
