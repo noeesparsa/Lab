@@ -4,9 +4,6 @@ coverage:
   precision: 2
   status:
     project:
-      default:
-        target: auto
-        threshold: 0%
       react-lab:
         target: 90%
         paths:
@@ -15,6 +12,11 @@ coverage:
         paths:
           - "libs/react-components/src/lib"
         target: 90%
+    patch:
+      default:
+        target: auto
+        threshold: 0%
+        base: auto
 comment:
   layout: 'reach, diff, flags, files'
   behavior: new
