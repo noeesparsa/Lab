@@ -1,9 +1,9 @@
 import _ from 'lodash';
-import { ReactNode, useMemo } from 'react';
+import React, { ReactNode, useMemo } from 'react';
 import { isRouteErrorResponse, useRouteError } from 'react-router-dom';
 import { ErrorCard } from '@laboratory/react-components';
 
-export default function RouterGlobalError(): JSX.Element {
+export default function RouterGlobalError(): React.ReactElement {
   const error: unknown = useRouteError();
 
   let children: ReactNode = ``;
@@ -32,7 +32,7 @@ export default function RouterGlobalError(): JSX.Element {
   }
 
   return useMemo(
-    (): JSX.Element => (
+    (): React.ReactElement => (
       <ErrorCard title="Something went wrong!" children={children}></ErrorCard>
     ),
     [children]
