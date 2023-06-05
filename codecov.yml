@@ -31,12 +31,14 @@ comment:
   branches:
     - 'main'
 
-flag_management:
-  individual_flags:
-    - name: apps_react-lab
+component_management:
+  individual_components:
+    - component_id: apps_react-lab
+      name: apps_react-lab
       paths:
         - apps/react-lab/src/app
-    - name: libs_react-components
+    - component_id: libs_react-components
+      name: libs_react-components
       paths:
         - libs/react-components/src/lib
 
