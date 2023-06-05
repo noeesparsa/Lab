@@ -31,13 +31,14 @@ comment:
   branches:
     - 'main'
 
-flags:
-  apps_react-lab:
-    paths: #note, accepts globs, not regexes
-      - apps/react-lab/src/app
-  libs_react-components:
-    paths: #note, accepts globs, not regexes
-      - libs/react-components/src/lib
+flag_management:
+  individual_flags:
+    - name: apps_react-lab
+      paths:
+        - apps/react-lab/src/app
+    - name: libs_react-components
+      paths:
+        - libs/react-components/src/lib
 
 ignore:
   - documentation
