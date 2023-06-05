@@ -23,7 +23,7 @@ coverage:
         base: auto
 
 comment:
-  layout: 'reach, diff, flags, files'
+  layout: 'reach, diff, flags, components, files'
   behavior: new
   require_changes: false
   require_base: false
