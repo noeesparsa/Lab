@@ -1,0 +1,48 @@
+coverage:
+  range: 60..90
+  round: down
+  precision: 2
+  status:
+    project:
+      default:
+        target: 90%
+        threshold: 0%
+        base: auto
+      apps_react-lab:
+        target: 85%
+        paths:
+          - "apps/react-lab/src/app"
+      libs_react-components:
+        paths:
+          - "libs/react-components/src/lib"
+        target: 95%
+    patch:
+      default:
+        target: auto
+        threshold: 0%
+        base: auto
+
+comment:
+  layout: 'reach, diff, flags, components, files'
+  behavior: new
+  require_changes: false
+  require_base: false
+  require_head: false
+  branches:
+    - 'main'
+
+component_management:
+  individual_components:
+    - component_id: apps_react-lab
+      name: apps_react-lab
+      paths:
+        - apps/react-lab/src/app
+    - component_id: libs_react-components
+      name: libs_react-components
+      paths:
+        - libs/react-components/src/lib
+
+ignore:
+  - documentation
+  - dist
+  - tools

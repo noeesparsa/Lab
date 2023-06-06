@@ -6,14 +6,6 @@ interface IProps {
   readonly children: ReactNode;
 }
 
-export function test(bool: boolean) {
-  if (bool) {
-    return 'toto';
-  } else {
-    return 'tita';
-  }
-}
-
 export function ErrorCard({ title, children }: IProps): JSX.Element {
   return useMemo(
     (): JSX.Element => (
