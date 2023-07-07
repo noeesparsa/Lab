@@ -1,3 +1,3 @@
 export const HomePage = () => {
-  return <div>This is the home page</div>;
+  return <div className="vtmn-typo_display-2">This is the home page</div>;
 };
