@@ -4,17 +4,13 @@ import { screen } from '@testing-library/react';
 
 describe(`ErrorCard`, (): void => {
   it(`should renders correctly`, (): void => {
-    const result = renderWithRouter(
-      <ErrorCard title="Title" children="Children"></ErrorCard>
-    );
+    const result = renderWithRouter(<ErrorCard title="Title">Children</ErrorCard>);
 
     expect(result).toMatchSnapshot();
   });
 
   it(`should have a title`, (): void => {
-    const result = renderWithRouter(
-      <ErrorCard title="Title" children="Children"></ErrorCard>
-    );
+    const result = renderWithRouter(<ErrorCard title="Title">Children</ErrorCard>);
 
     expect(
       screen.getByRole(`heading`, {
@@ -25,9 +21,7 @@ describe(`ErrorCard`, (): void => {
   });
 
   it(`should have an image`, (): void => {
-    const result = renderWithRouter(
-      <ErrorCard title="Title" children="Children"></ErrorCard>
-    );
+    const result = renderWithRouter(<ErrorCard title="Title">Children</ErrorCard>);
 
     expect(screen.getByRole(`img`)).toHaveAttribute(
       `src`,
@@ -39,10 +33,9 @@ describe(`ErrorCard`, (): void => {
 
   it(`should have a projection`, (): void => {
     const result = renderWithRouter(
-      <ErrorCard
-        title="Title"
-        children={<p role="paragraph">Projection</p>}
-      ></ErrorCard>
+      <ErrorCard title="Title">
+        <p role="paragraph">Projection</p>
+      </ErrorCard>
     );
 
     expect(screen.getByRole(`paragraph`)).toHaveTextContent(`Projection`);

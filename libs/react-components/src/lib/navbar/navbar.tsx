@@ -8,12 +8,7 @@ export interface NavbarComponentProps {
   isFixed?: boolean;
 }
 
-export function Navbar({
-  logo,
-  redirection,
-  actions,
-  isFixed,
-}: NavbarComponentProps): JSX.Element {
+export function Navbar({ logo, redirection, actions, isFixed }: NavbarComponentProps): JSX.Element {
   return (
     <header
       className={`vtmn-navbar vtmn-shadow-100 ${isFixed ? `vtmn-sticky` : ``}`}
@@ -28,9 +23,7 @@ export function Navbar({
           <img className="vtmn-h-full" src={logo} alt="Laboratory" />
         </a>
       </div>
-      <div className="vtmn-flex vtmn-flex-row vtmn-items-center vtmn-gap-2">
-        {actions}
-      </div>
+      <div className="vtmn-flex vtmn-flex-row vtmn-items-center vtmn-gap-2">{actions}</div>
     </header>
   );
 }

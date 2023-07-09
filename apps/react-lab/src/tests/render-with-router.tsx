@@ -1,7 +1,8 @@
-import { Router } from '@remix-run/router/dist/router';
-import { render, RenderResult } from '@testing-library/react';
+import { RenderResult, render } from '@testing-library/react';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+
 import { ReactElement } from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Router } from '@remix-run/router/dist/router';
 
 export function renderWithRouter(ui: ReactElement): RenderResult {
   const router: Router = createBrowserRouter([

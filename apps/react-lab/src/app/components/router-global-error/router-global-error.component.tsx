@@ -1,5 +1,6 @@
 import React, { ReactNode, useMemo } from 'react';
 import { isRouteErrorResponse, useRouteError } from 'react-router-dom';
+
 import { ErrorCard } from '@laboratory/react-components';
 
 function generateErrorMessage(error: unknown): ReactNode {
@@ -15,9 +16,7 @@ function generateErrorMessage(error: unknown): ReactNode {
         {statusText && `: ${statusText}`}
       </p>
 
-      {typeof data === 'string' && (
-        <p className="vtmn-typo_caption-1 linqueo-color-grey">{data}</p>
-      )}
+      {typeof data === 'string' && <p className="vtmn-typo_caption-1 linqueo-color-grey">{data}</p>}
 
       {typeof data === 'object' && (
         <pre>
@@ -34,9 +33,7 @@ export default function RouterGlobalError(): React.ReactElement {
   const children: ReactNode = generateErrorMessage(error);
 
   return useMemo(
-    (): React.ReactElement => (
-      <ErrorCard title="Something went wrong!" children={children}></ErrorCard>
-    ),
+    (): React.ReactElement => <ErrorCard title="Something went wrong!">{children}</ErrorCard>,
     [children]
   );
 }

@@ -2,7 +2,15 @@
   "name": "@laboratory/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+        "start": "nx run-many --target=serve",
+    "build": "nx run-many --target=build",
+    "test-explorer": "npx vitest --config ./vite.config.ts --watch",
+    "test": "nx run-many --target=test",
+    "test-coverage": "nx run-many --target=test --coverage",
+    "lint": "nx run-many --target=lint",
+    "prepare": "husky install"
+  },
   "private": true,
   "dependencies": {
     "@swc/helpers": "0.5.1",
@@ -21,6 +29,8 @@
     "typeface-roboto-condensed": "1.1.13"
   },
   "devDependencies": {
+    "@commitlint/cli": "17.6.6",
+    "@commitlint/config-conventional": "17.6.6",
     "@nx/cypress": "16.3.1",
     "@nx/eslint-plugin": "16.3.1",
     "@nx/js": "16.3.1",
@@ -58,6 +68,8 @@
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-vitest": "0.2.3",
+    "eslint-plugin-prettier": "4.2.1",
+    "husky": "8.0.0",
     "jest-extended": "3.2.4",
     "jsdom": "22.0.0",
     "lodash": "4.17.21",
@@ -76,4 +88,3 @@
     "vitest": "0.31.1"
   }
 }
-
