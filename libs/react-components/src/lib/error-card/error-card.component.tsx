@@ -27,6 +27,6 @@ export function ErrorCard({ title, children }: IProps): JSX.Element {
         </div>
       </div>
     ),
-    [title, children]
+    [title, children],
   );
 }

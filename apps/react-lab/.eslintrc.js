@@ -17,12 +17,6 @@ module.exports = {
         project: ['apps/react-lab/tsconfig.json'],
       },
     },
-    'eslint-import-resolver-custom-alias': {
-      alias: {
-        '@laboratory/react-components': `libs/react-components/src`,
-      },
-      extensions: [`.ts`, `.js`, `.cjs`, `.mjs`, `.tsx`],
-    },
   },
 
   overrides: [

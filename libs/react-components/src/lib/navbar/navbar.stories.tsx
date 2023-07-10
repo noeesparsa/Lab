@@ -2,7 +2,7 @@ import type { Meta } from '@storybook/react';
 import { StoryObj } from '@storybook/react';
 import { VtmnButton } from '@vtmn/react';
 import appLogo from '../../assets/img.png';
-import { Navbar } from './navbar';
+import { Navbar } from './navbar.component';
 
 const meta: Meta<typeof Navbar> = {
   component: Navbar,

@@ -26,7 +26,7 @@ function generateErrorMessage(error: unknown): ReactNode {
   );
 }
 
-export default function RouterGlobalError(): React.ReactElement {
+export default function RouterGlobalError(): JSX.Element {
   const error: unknown = useRouteError();
 
   const children: ReactNode = generateErrorMessage(error);
