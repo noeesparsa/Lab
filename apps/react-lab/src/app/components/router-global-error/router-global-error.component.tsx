@@ -1,6 +1,6 @@
+import { ErrorCard } from '@laboratory/react-components';
 import React, { ReactNode, useMemo } from 'react';
 import { isRouteErrorResponse, useRouteError } from 'react-router-dom';
-import { ErrorCard } from '@laboratory/react-components';
 
 function generateErrorMessage(error: unknown): ReactNode {
   if (!isRouteErrorResponse(error)) {
@@ -35,7 +35,7 @@ export default function RouterGlobalError(): React.ReactElement {
 
   return useMemo(
     (): React.ReactElement => (
-      <ErrorCard title="Something went wrong!" children={children}></ErrorCard>
+      <ErrorCard title="Something went wrong!">{children}</ErrorCard>
     ),
     [children]
   );

@@ -1,11 +1,11 @@
-import { ErrorCard } from './error-card.component';
-import { renderWithRouter } from '../../tests/render-with-router';
 import { screen } from '@testing-library/react';
+import { renderWithRouter } from '../../tests/render-with-router';
+import { ErrorCard } from './error-card.component';
 
-describe(`ErrorCard`, (): void => {
+describe(`errorCard`, (): void => {
   it(`should renders correctly`, (): void => {
     const result = renderWithRouter(
-      <ErrorCard title="Title" children="Children"></ErrorCard>
+      <ErrorCard title="Title">Children</ErrorCard>
     );
 
     expect(result).toMatchSnapshot();
@@ -13,7 +13,7 @@ describe(`ErrorCard`, (): void => {
 
   it(`should have a title`, (): void => {
     const result = renderWithRouter(
-      <ErrorCard title="Title" children="Children"></ErrorCard>
+      <ErrorCard title="Title">Children</ErrorCard>
     );
 
     expect(
@@ -26,7 +26,7 @@ describe(`ErrorCard`, (): void => {
 
   it(`should have an image`, (): void => {
     const result = renderWithRouter(
-      <ErrorCard title="Title" children="Children"></ErrorCard>
+      <ErrorCard title="Title">Children</ErrorCard>
     );
 
     expect(screen.getByRole(`img`)).toHaveAttribute(
@@ -39,11 +39,12 @@ describe(`ErrorCard`, (): void => {
 
   it(`should have a projection`, (): void => {
     const result = renderWithRouter(
-      <ErrorCard
-        title="Title"
-        children={<p role="paragraph">Projection</p>}
-      ></ErrorCard>
+      <ErrorCard title="Title">
+        <p role="paragraph">Projection</p>
+      </ErrorCard>
     );
+
+    screen.debug();
 
     expect(screen.getByRole(`paragraph`)).toHaveTextContent(`Projection`);
     expect(result).toMatchSnapshot();

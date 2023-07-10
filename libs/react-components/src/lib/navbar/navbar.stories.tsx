@@ -1,8 +1,8 @@
 import type { Meta } from '@storybook/react';
-import { Navbar } from './navbar';
-import appLogo from '../../assets/img.png';
-import { VtmnButton } from '@vtmn/react';
 import { StoryObj } from '@storybook/react';
+import { VtmnButton } from '@vtmn/react';
+import appLogo from '../../assets/img.png';
+import { Navbar } from './navbar';
 
 const meta: Meta<typeof Navbar> = {
   component: Navbar,
@@ -26,10 +26,12 @@ export const With_actions = {
     logo: appLogo,
     redirection: '/',
     actions: [
-      <VtmnButton size="small" variant="secondary">
+      <VtmnButton key={1} size="small" variant="secondary">
         Action 1
       </VtmnButton>,
-      <VtmnButton size="small">Action 2</VtmnButton>,
+      <VtmnButton key={2} size="small">
+        Action 2
+      </VtmnButton>,
     ],
   },
 };
