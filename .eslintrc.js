@@ -15,7 +15,7 @@ module.exports = {
   overrides: [
     {
       files: ['*.ts', '*.tsx', '*.js', '*.jsx'],
-      plugins: ['@nx', 'react', '@typescript-eslint', 'import'],
+      plugins: ['@nx', 'react', 'prettier', '@typescript-eslint', 'import'],
       extends: [
         'plugin:@nx/react',
         'plugin:react/recommended',
@@ -23,8 +23,11 @@ module.exports = {
         'plugin:prettier/recommended',
         'plugin:jsx-a11y/recommended',
         'plugin:react/jsx-runtime',
+        'plugin:import/recommended',
+        'plugin:import/typescript',
       ],
       rules: {
+        'prettier/prettier': 'error',
         '@nx/enforce-module-boundaries': [
           'error',
           {

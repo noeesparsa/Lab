@@ -1,6 +1,5 @@
 import { ReactNode } from 'react';
 
-/* eslint-disable-next-line */
 export interface NavbarComponentProps {
   logo: string;
   redirection: string;
