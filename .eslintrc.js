@@ -11,7 +11,14 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
   ],
   ignorePatterns: ['**/*'],
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: 'module',
+  },
   plugins: ['@nx', 'react', '@typescript-eslint'],
+  env: {
+    es6: true,
+  },
   settings: {
     'import/extensions': ['.js', '.jsx', '.ts', '.tsx', '.cjs', '.mjs'],
     'import/parsers': {

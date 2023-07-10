@@ -1,5 +1,3 @@
-const appRootPath = require(`app-root-path`);
-
 module.exports = {
   extends: ['plugin:@nrwl/nx/react', '../../.eslintrc.js'],
   ignorePatterns: ['!**/*'],
@@ -7,7 +5,7 @@ module.exports = {
     'import/resolver': {
       'eslint-import-resolver-custom-alias': {
         alias: {
-          '@lab/react-components': `${appRootPath.path}/libs/react-components/src`,
+          '@lab/react-components': 'libs/react-components/src',
         },
         extensions: [`.ts`, `.js`, `.cjs`, `.mjs`, `.tsx`],
       },
