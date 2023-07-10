@@ -1,31 +1,40 @@
-const appRootPath = require(`app-root-path`);
-
 module.exports = {
-  extends: ['plugin:@nrwl/nx/react', '../../.eslintrc.json'],
+  extends: ['../../.eslintrc.js'],
   ignorePatterns: ['!**/*'],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: ['./tsconfig.*.json'],
+  },
   settings: {
     'import/resolver': {
-      'eslint-import-resolver-custom-alias': {
-        alias: {
-          '@lab/react-components': `${appRootPath.path}/libs/react-components/src`,
-        },
-        extensions: [`.ts`, `.js`, `.cjs`, `.mjs`, `.tsx`],
+      typescript: {
+        alwaysTryTypes: true,
+        project: ['apps/react-lab/tsconfig.json'],
+      },
+      node: {
+        alwaysTryTypes: true,
+        project: ['apps/react-lab/tsconfig.json'],
       },
     },
-
-    overrides: [
-      {
-        files: ['*.ts', '*.tsx', '*.js', '*.jsx'],
-        rules: {},
-      },
-      {
-        files: ['*.ts', '*.tsx'],
-        rules: {},
-      },
-      {
-        files: ['*.js', '*.jsx'],
-        rules: {},
-      },
-    ],
   },
+
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx', '*.js', '*.jsx'],
+      rules: {
+        '@typescript-eslint/await-thenable': `off`,
+      },
+    },
+    {
+      files: ['*.ts', '*.tsx'],
+      rules: {},
+    },
+    {
+      files: ['*.js', '*.jsx'],
+      rules: {
+        'import/no-commonjs': `off`,
+      },
+    },
+  ],
 };

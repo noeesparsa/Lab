@@ -1,10 +1,11 @@
-import './app.module.scss';
-
 import { Outlet } from 'react-router-dom';
-import { Navbar } from '@laboratory/react-components';
 import logo from '../assets/logo.png';
 
-export function App() {
+import { Navbar } from '@laboratory/react-components';
+
+import './app.module.scss';
+
+export default function App(): JSX.Element {
   return (
     <div>
       <Navbar logo={logo} redirection={'/'} />
@@ -12,5 +13,3 @@ export function App() {
     </div>
   );
 }
-
-export default App;

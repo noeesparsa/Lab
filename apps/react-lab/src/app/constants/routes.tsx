@@ -1,7 +1,8 @@
-import {RouteObject} from 'react-router-dom';
+import { RouteObject } from 'react-router-dom';
 import App from '../app';
-import {HomePage} from '../pages/home/home-page';
 import RouterGlobalError from '../components/router-global-error/router-global-error.component';
+
+import { HomePage } from '../pages/home/home-page';
 
 export const routes: RouteObject[] = [
   {

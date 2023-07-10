@@ -21,11 +21,12 @@ export function ErrorCard({ title, children }: IProps): JSX.Element {
                 src="https://media.istockphoto.com/id/1345443906/fr/photo/symbole-de-panneau-davertissement-jaune-ou-alerte-de-danger-de-s%C3%A9curit%C3%A9-avertissement-ic%C3%B4ne.jpg?s=612x612&w=0&k=20&c=odJNq2qu0GXQ_8DNeHQuioOrnyXBnrJ6cNngCFwP9H4="
               />
             }
-            children={children}
-          ></VtmnCard>
+          >
+            {children}
+          </VtmnCard>
         </div>
       </div>
     ),
-    [title, children]
+    [title, children],
   );
 }
