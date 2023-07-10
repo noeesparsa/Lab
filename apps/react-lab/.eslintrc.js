@@ -6,26 +6,6 @@ module.exports = {
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.*.json'],
   },
-  settings: {
-    settings: {
-      'import/resolver': {
-        typescript: {
-          alwaysTryTypes: true,
-          project: ['apps/react-lab/tsconfig.*.json'],
-        },
-        node: {
-          alwaysTryTypes: true,
-          project: ['apps/react-lab/tsconfig.*.json'],
-        },
-      },
-      'eslint-import-resolver-custom-alias': {
-        alias: {
-          '@lab/react-components': 'libs/react-components/src',
-        },
-        extensions: [`.ts`, `.js`, `.cjs`, `.mjs`, `.tsx`],
-      },
-    },
-  },
 
   overrides: [
     {
@@ -35,12 +15,23 @@ module.exports = {
       },
     },
     {
+      files: [`tests/**/*.tsx`],
+      rules: {
+        '@typescript-eslint/no-unsafe-call': `off`,
+        '@typescript-eslint/no-unsafe-assignment': `off`,
+        '@typescript-eslint/no-unsafe-argument': `off`,
+        '@typescript-eslint/no-unsafe-member-access': `off`,
+      },
+    },
+    {
       files: ['*.ts', '*.tsx'],
       rules: {},
     },
     {
       files: ['*.js', '*.jsx'],
-      rules: {},
+      rules: {
+        'import/no-commonjs': `off`,
+      },
     },
   ],
 };
