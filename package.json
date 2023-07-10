@@ -2,7 +2,9 @@
   "name": "@laboratory/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "prepare": "husky install"
+  },
   "private": true,
   "dependencies": {
     "@swc/helpers": "0.5.1",
@@ -73,7 +75,7 @@
     "vite-plugin-dts": "2.3.0",
     "vite-plugin-eslint": "1.8.1",
     "vite-tsconfig-paths": "4.2.0",
-    "vitest": "0.31.1"
+    "vitest": "0.31.1",
+    "husky": "^8.0.0"
   }
 }
-

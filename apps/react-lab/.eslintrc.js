@@ -1,7 +1,7 @@
 const appRootPath = require(`app-root-path`);
 
 module.exports = {
-  extends: ['plugin:@nrwl/nx/react', '../../.eslintrc.json'],
+  extends: ['plugin:@nrwl/nx/react', '../../.eslintrc.js'],
   ignorePatterns: ['!**/*'],
   settings: {
     'import/resolver': {
