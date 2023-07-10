@@ -1,5 +1,5 @@
-import { ErrorCard } from './error-card.component';
 import type { Meta, StoryObj } from '@storybook/react';
+import { ErrorCard } from './error-card.component';
 
 const meta: Meta<typeof ErrorCard> = {
   title: 'Error Card',

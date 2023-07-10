@@ -1,11 +1,12 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { routes } from './app/constants/routes';
 import { ErrorBoundary } from 'react-error-boundary';
-import GlobalError from './app/components/global-error/global-error.component';
+
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import GlobalErrorBoundary from './app/classes/errors/global-error-boundary';
+import GlobalError from './app/components/global-error/global-error.component';
+
+import { routes } from './app/constants/routes';
 
 const root = createRoot(document.getElementById('root') as HTMLElement);
 

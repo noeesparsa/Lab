@@ -1,5 +1,6 @@
-import App from './app';
 import { renderWithRouter } from '../tests/render-with-router';
+
+import App from './app';
 
 describe('App', () => {
   it('should render correctly', async (): Promise<void> => {

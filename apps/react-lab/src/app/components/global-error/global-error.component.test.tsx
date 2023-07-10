@@ -1,5 +1,5 @@
-import GlobalError from './global-error.component';
 import { renderWithRouter } from '../../../tests/render-with-router';
+import GlobalError from './global-error.component';
 
 describe(`GlobalError`, (): void => {
   it(`should renders correctly`, async (): Promise<void> => {

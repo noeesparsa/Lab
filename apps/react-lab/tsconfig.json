@@ -1,13 +1,12 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
-    "allowJs": false,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "types": ["node", "vite/client", "vitest"]
+    "types": ["node", "vite/client", "vitest"],
+    "resolveJsonModule": true
   },
-  "files": [],
+  "files": ["index.html"],
   "include": [],
   "references": [
     {

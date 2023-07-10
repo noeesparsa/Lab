@@ -1,6 +1,12 @@
 module.exports = {
   extends: ['plugin:@nrwl/nx/react', '../../.eslintrc.js'],
   ignorePatterns: ['!**/*'],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: ['./tsconfig.*.json', './.storybook/tsconfig.json'],
+  },
+  plugins: ['@typescript-eslint'],
   overrides: [
     {
       files: ['*.ts', '*.tsx', '*.js', '*.jsx'],
