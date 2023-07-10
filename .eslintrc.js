@@ -17,7 +17,9 @@ module.exports = {
   },
   plugins: ['@nx', 'react', '@typescript-eslint'],
   env: {
+    node: true,
     es6: true,
+    browser: true,
   },
   settings: {
     'import/extensions': ['.js', '.jsx', '.ts', '.tsx', '.cjs', '.mjs'],
