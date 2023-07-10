@@ -1,6 +1,6 @@
 /// <reference types="vitest" />
-import { defineConfig, searchForWorkspaceRoot } from 'vite';
 import react from '@vitejs/plugin-react';
+import { defineConfig, searchForWorkspaceRoot } from 'vite';
 import viteTsConfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
@@ -32,7 +32,7 @@ export default defineConfig({
       dir: '../../node_modules/.vitest',
     },
     environment: 'jsdom',
-    include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+    include: ['src/**/*.test.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     coverage: {
       provider: `c8`,
       reporter: [`text`, `html`, `clover`, `json`, `lcov`],
