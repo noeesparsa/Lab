@@ -1,10 +1,10 @@
+import { Outlet } from 'react-router-dom';
+import logo from '../assets/logo.png';
+import { Navbar } from '@laboratory/react-components';
+
 import './app.module.scss';
 
-import { Outlet } from 'react-router-dom';
-import { Navbar } from '@laboratory/react-components';
-import logo from '../assets/logo.png';
-
-export function App() {
+export default function App() {
   return (
     <div>
       <Navbar logo={logo} redirection={'/'} />
@@ -12,5 +12,3 @@ export function App() {
     </div>
   );
 }
-
-export default App;

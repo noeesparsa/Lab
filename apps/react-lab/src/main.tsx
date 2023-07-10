@@ -21,5 +21,5 @@ root.render(
     >
       <RouterProvider router={router} />
     </ErrorBoundary>
-  </StrictMode>
+  </StrictMode>,
 );

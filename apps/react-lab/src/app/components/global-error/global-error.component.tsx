@@ -1,5 +1,5 @@
-import { ErrorCard } from '@laboratory/react-components';
 import { useMemo } from 'react';
+import { ErrorCard } from '@laboratory/react-components';
 
 interface IProps {
   readonly error: Error;
@@ -12,6 +12,6 @@ export default function GlobalError({ error }: IProps): JSX.Element {
         <p>{error.message}</p>
       </ErrorCard>
     ),
-    [error]
+    [error],
   );
 }

@@ -5,7 +5,7 @@ export default class GlobalErrorBoundary {
     error: Error,
     info: {
       componentStack: string;
-    }
+    },
   ): void {
     console.error(error, {
       messageContext: {

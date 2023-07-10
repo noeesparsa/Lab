@@ -3,7 +3,7 @@ module.exports = {
   ignorePatterns: ['**/*'],
   parserOptions: {
     tsconfigRootDir: __dirname,
-    project: ['tsconfig.base.json'],
+    project: ['./tsconfig.base.json'],
     ecmaVersion: 2020,
     sourceType: 'module',
   },
@@ -12,6 +12,26 @@ module.exports = {
     es6: true,
     browser: true,
   },
+  settings: {
+    'import/extensions': [
+      '.js',
+      '.jsx',
+      '.ts',
+      '.tsx',
+      '.cjs',
+      '.mjs'
+    ],
+    'import/parsers': {
+      '@typescript-eslint/parser': [
+        '.ts',
+        '.tsx'
+      ]
+    },
+    'import/cache': {
+      lifetime: 'Infinity'
+    }
+  },
+
   overrides: [
     {
       files: ['*.ts', '*.tsx', '*.js', '*.jsx'],
@@ -55,7 +75,7 @@ module.exports = {
         'import/first': 'error',
         'import/no-mutable-exports': 'error',
         'import/no-unresolved': 'off',
-        'import/no-absolute-path': 'off',
+        'import/no-absolute-path': 'off'
       },
     },
     {

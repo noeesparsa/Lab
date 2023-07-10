@@ -6,6 +6,24 @@ module.exports = {
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.*.json'],
   },
+  settings: {
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+        project: ['apps/react-lab/tsconfig.json'],
+      },
+      node: {
+        alwaysTryTypes: true,
+        project: ['apps/react-lab/tsconfig.json'],
+      },
+    },
+    'eslint-import-resolver-custom-alias': {
+      alias: {
+        '@laboratory/react-components': `libs/react-components/src`,
+      },
+      extensions: [`.ts`, `.js`, `.cjs`, `.mjs`, `.tsx`],
+    },
+  },
 
   overrides: [
     {
