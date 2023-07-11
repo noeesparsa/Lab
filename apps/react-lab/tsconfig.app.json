@@ -12,11 +12,6 @@
     "test-setup.mjs",
     "vite.config.ts"
   ],
-  "exclude": [
-    "src/**/*.test.ts",
-    "src/**/*.test.tsx",
-    "src/**/*.test.js",
-    "src/**/*.test.jsx"
-  ],
+  "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx", "src/**/*.test.js", "src/**/*.test.jsx"],
   "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx"]
 }
