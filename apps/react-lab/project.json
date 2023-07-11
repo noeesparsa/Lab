@@ -77,6 +77,14 @@
       "options": {
         "buildTarget": "react-lab:build"
       }
+    },
+    "stylelint": {
+      "executor": "nx-stylelint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/react-lab/**/*.scss"],
+        "formatter": "compact"
+      }
     }
   },
   "tags": []
