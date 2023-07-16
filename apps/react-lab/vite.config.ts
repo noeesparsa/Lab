@@ -1,6 +1,7 @@
 import react from '@vitejs/plugin-react';
 import { defineConfig, searchForWorkspaceRoot } from 'vite';
 import viteTsConfigPaths from 'vite-tsconfig-paths';
+import { configDefaults } from 'vitest/config';
 
 export default defineConfig({
   cacheDir: '../../node_modules/.vite/react-lab',
@@ -30,10 +31,12 @@ export default defineConfig({
     cache: {
       dir: '../../node_modules/.vitest',
     },
+    exclude: [...configDefaults.exclude, '**/test-setup.mjs'],
     environment: 'jsdom',
     include: ['src/**/*.test.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     coverage: {
-      provider: `c8`,
+      exclude: [...configDefaults.exclude, '**/test-setup.mjs'],
+      provider: `v8`,
       reporter: [`text`, `html`, `clover`, `json`, `lcov`],
     },
     logHeapUsage: true,

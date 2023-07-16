@@ -1,6 +1,6 @@
 import { ReactNode, useMemo } from 'react';
 import { isRouteErrorResponse, useRouteError } from 'react-router-dom';
-import { ErrorCard } from '@laboratory/react-components';
+import { ErrorCard } from '@lab/react-components';
 
 function generateErrorMessage(error: unknown): ReactNode {
   if (!isRouteErrorResponse(error)) {
@@ -15,7 +15,7 @@ function generateErrorMessage(error: unknown): ReactNode {
         {statusText && `: ${statusText}`}
       </p>
 
-      {typeof data === 'string' && <p className="vtmn-typo_caption-1 linqueo-color-grey">{data}</p>}
+      {typeof data === 'string' && <p className="vtmn-typo_caption-1">{data}</p>}
 
       {typeof data === 'object' && (
         <pre>

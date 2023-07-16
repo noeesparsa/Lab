@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { ErrorCard } from '@laboratory/react-components';
+import { ErrorCard } from '@lab/react-components';
 
 interface IProps {
   readonly error: Error;

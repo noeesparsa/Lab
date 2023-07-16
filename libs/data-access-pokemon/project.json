@@ -1,0 +1,32 @@
+{
+  "name": "data-access-pokemon",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/data-access-pokemon/src",
+  "projectType": "library",
+  "tags": ["data-access", "data-access-pokemon"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/data-access-pokemon/**/*.{ts,tsx,js,jsx}"],
+        "quiet": true,
+        "cache": true,
+        "cacheLocation": "./node_modules/.cache/eslint"
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["coverage/libs/data-access-pokemon"],
+      "options": {
+        "coverage": true,
+        "reportsDirectory": "../../coverage/libs/data-access-pokemon"
+      },
+      "configurations": {
+        "ci": {
+          "coverage": true
+        }
+      }
+    }
+  }
+}
