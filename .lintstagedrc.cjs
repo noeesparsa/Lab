@@ -8,7 +8,7 @@ module.exports = {
   },
 
   '*.{js,ts,html,cjs,mjs,jsx,tsx}'(files) {
-    return [`nx affected:lint --files=${files.join(',')}`, 'nx affected --target=test'];
+    return [`nx affected:lint --files=${files.join(',')}`];
   },
 };
 
