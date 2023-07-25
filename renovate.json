@@ -1,8 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:base"],
   "separateMajorMinor": true,
   "separateMultipleMajor": true,
   "separateMinorPatch": true,
@@ -11,14 +9,14 @@
   "ignoreUnstable": true,
   "respectLatest": true,
   "enabled": true,
-  "prHourlyLimit": 2,
+  "prHourlyLimit": 10,
   "prCreation": "immediate",
-  "branchConcurrentLimit": 2,
+  "branchConcurrentLimit": 10,
   "branchPrefix": "dependencies/",
   "labels": ["dependencies :package:"],
   "assignees": ["Rangoow"],
   "reviewers": ["Rangoow"],
-  "minimumReleaseAge": "10 days" ,
+  "minimumReleaseAge": "10 days",
   "enabledManagers": ["npm", "github-actions", "nvm"],
   "npm": {
     "enabled": true,
