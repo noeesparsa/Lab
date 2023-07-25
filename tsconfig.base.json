@@ -39,7 +39,9 @@
     "typeRoots": ["node_modules/@types"],
     "resolveJsonModule": true,
     "paths": {
-      "@laboratory/react-components": ["libs/react-components/src/index.ts"]
+      "@lab/data-access-pokemon": ["libs/data-access-pokemon/src/index.ts"],
+      "@lab/react-components": ["libs/react-components/src/index.ts"],
+      "@lab/util-api-pokemon": ["libs/util-api-pokemon/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

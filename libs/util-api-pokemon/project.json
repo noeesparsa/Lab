@@ -1,0 +1,32 @@
+{
+  "name": "util-api-pokemon",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/util-api-pokemon/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/util-api-pokemon/**/*.ts"],
+        "quiet": true,
+        "cache": true,
+        "cacheLocation": "./node_modules/.cache/eslint"
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["coverage/libs/util-api-pokemon"],
+      "options": {
+        "coverage": true,
+        "reportsDirectory": "../../coverage/libs/util-api-pokemon"
+      },
+      "configurations": {
+        "ci": {
+          "coverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}

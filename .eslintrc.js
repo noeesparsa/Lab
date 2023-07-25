@@ -75,7 +75,8 @@ module.exports = {
         'import/first': 'error',
         'import/no-mutable-exports': 'error',
         'import/no-unresolved': 'off',
-        'import/no-absolute-path': 'off'
+        'import/no-absolute-path': 'off',
+        'import/namespace': 'off',
       },
     },
     {

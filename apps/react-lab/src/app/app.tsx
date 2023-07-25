@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
-import { Navbar } from '@laboratory/react-components';
+import { Navbar } from '@lab/react-components';
 
 import './app.module.scss';
 
