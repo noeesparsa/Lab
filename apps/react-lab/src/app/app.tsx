@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo_without_background.png';
 
 import { Navbar } from '@lab/react-components';
 

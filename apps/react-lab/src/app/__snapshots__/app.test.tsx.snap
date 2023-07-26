@@ -21,7 +21,7 @@ exports[`App > should render correctly 1`] = `
               <img
                 alt="Laboratory"
                 class="vtmn-h-full"
-                src="/src/assets/logo.png"
+                src="/src/assets/logo_without_background.png"
               />
             </a>
           </div>
@@ -49,7 +49,7 @@ exports[`App > should render correctly 1`] = `
             <img
               alt="Laboratory"
               class="vtmn-h-full"
-              src="/src/assets/logo.png"
+              src="/src/assets/logo_without_background.png"
             />
           </a>
         </div>
