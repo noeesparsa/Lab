@@ -4,7 +4,7 @@
   "separateMajorMinor": true,
   "separateMultipleMajor": true,
   "separateMinorPatch": true,
-  "rebaseWhen": "auto",
+  "rebaseWhen": "behind-base-branch",
   "ignoreTests": false,
   "ignoreUnstable": true,
   "respectLatest": true,
