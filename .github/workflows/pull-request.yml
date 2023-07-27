@@ -2,6 +2,7 @@ name: Pull Request Workflow
 on:
   push:
     branches:
+      - dev
       - main
   pull_request:
 
@@ -35,4 +36,3 @@ jobs:
 
       - name: Build storybook affected
         run: npx nx affected -t build-storybook --parallel=3 --configuration=ci
-
