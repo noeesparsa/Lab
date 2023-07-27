@@ -29,7 +29,7 @@
   },
   "minor": {
     "branchPrefix": "dependencies/minor/",
-    "automerge": false,
+    "automerge": true,
     "enabled": true
   },
   "patch": {
