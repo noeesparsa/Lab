@@ -9,7 +9,7 @@ concurrency:
 jobs:
   release:
     name: Create a release
-    runs-on: [self-hosted, decathlon]
+    runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
       - name: Install & release
