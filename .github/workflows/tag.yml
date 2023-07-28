@@ -1,0 +1,20 @@
+name: Release a version
+
+on: workflow_dispatch
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  release:
+    name: Create a release
+    runs-on: [self-hosted, decathlon]
+    timeout-minutes: 20
+    steps:
+      - name: Install & release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          npm ci
+          npx semantic-release
