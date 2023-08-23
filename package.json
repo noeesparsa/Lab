@@ -68,7 +68,7 @@
     "husky": "8.0.3",
     "jest-extended": "3.2.4",
     "jsdom": "22.1.0",
-    "lint-staged": "13.2.3",
+    "lint-staged": "13.3.0",
     "lodash": "4.17.21",
     "nx": "16.3.2",
     "nx-stylelint": "15.0.0",
