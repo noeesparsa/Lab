@@ -89,6 +89,6 @@
     "vite-plugin-pwa": "0.16.4",
     "vite-tsconfig-paths": "4.2.0",
     "vitest": "0.34.3",
-    "vitest-mock-extended": "1.2.0"
+    "vitest-mock-extended": "1.2.1"
   }
 }
