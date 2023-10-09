@@ -73,7 +73,7 @@
     "nx": "16.9.1",
     "nx-stylelint": "15.0.0",
     "pokeapi-typescript": "2.1.0",
-    "postcss": "8.4.30",
+    "postcss": "8.4.31",
     "prettier": "2.8.8",
     "react-test-renderer": "18.2.0",
     "sass": "1.68.0",
