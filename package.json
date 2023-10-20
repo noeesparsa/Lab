@@ -71,7 +71,7 @@
     "lint-staged": "13.3.0",
     "lodash": "4.17.21",
     "nx": "16.10.0",
-    "nx-stylelint": "15.0.0",
+    "nx-stylelint": "16.0.1",
     "pokeapi-typescript": "2.1.0",
     "postcss": "8.4.31",
     "prettier": "2.8.8",
