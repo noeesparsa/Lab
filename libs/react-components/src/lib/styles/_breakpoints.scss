@@ -1,0 +1,14 @@
+$mediaquery: (
+    mobile-max: 599px,
+    tablet-min: 600px,
+    tablet-max: 899px,
+    small-desktop-min: 900px,
+    small-desktop-max: 1199px,
+    medium-desktop-min: 1200px,
+    medium-desktop-max: 1799px,
+    large-desktop-min: 1800px,
+);
+
+@function mediaquery($key) {
+  @return #{map-get($mediaquery, $key)};
+}

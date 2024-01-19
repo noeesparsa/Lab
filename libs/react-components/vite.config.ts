@@ -45,6 +45,11 @@ export default defineConfig({
       reportOnFailure: true,
       reportsDirectory: '../../coverage/libs/react-components',
     },
+    css: {
+      modules: {
+        classNameStrategy: 'non-scoped',
+      },
+    },
     logHeapUsage: true,
     silent: true,
     setupFiles: [`./test-setup.mjs`],
