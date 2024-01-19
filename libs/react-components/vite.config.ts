@@ -1,8 +1,6 @@
-import { join } from 'path';
+import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 import react from '@vitejs/plugin-react';
 import { defineConfig, searchForWorkspaceRoot } from 'vite';
-import dts from 'vite-plugin-dts';
-import viteTsConfigPaths from 'vite-tsconfig-paths';
 import { configDefaults } from 'vitest/config';
 
 export default defineConfig({
@@ -14,19 +12,10 @@ export default defineConfig({
     },
   },
 
-  plugins: [
-    dts({
-      entryRoot: 'src',
-      tsConfigFilePath: join(__dirname, 'tsconfig.lib.json'),
-      skipDiagnostics: true,
-    }),
-    react(),
-    viteTsConfigPaths({
-      root: '../../',
-    }),
-  ],
+  plugins: [react(), nxViteTsPaths()],
 
   test: {
+    reporters: ['default'],
     globals: true,
     cache: {
       dir: '../../node_modules/.vitest',
@@ -54,6 +43,7 @@ export default defineConfig({
       reporter: [`text`, `html`, `clover`, `json`, `lcov`],
       all: true,
       reportOnFailure: true,
+      reportsDirectory: '../../coverage/libs/react-components',
     },
     logHeapUsage: true,
     silent: true,

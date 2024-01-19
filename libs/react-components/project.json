@@ -6,7 +6,7 @@
   "tags": ["react-components"],
   "targets": {
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["libs/react-components/**/*.{ts,tsx,js,jsx}"],
@@ -17,7 +17,7 @@
     },
     "test": {
       "executor": "@nrwl/vite:test",
-      "outputs": ["coverage/libs/react-components"],
+      "outputs": ["{workspaceRoot}/coverage/libs/react-components"],
       "options": {
         "coverage": true,
         "reportsDirectory": "../../coverage/libs/react-components"

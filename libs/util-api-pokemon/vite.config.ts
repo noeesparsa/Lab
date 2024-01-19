@@ -1,20 +1,17 @@
+import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 import { defineConfig } from 'vite';
-import viteTsConfigPaths from 'vite-tsconfig-paths';
 import { configDefaults } from 'vitest/config';
 
 export default defineConfig({
   cacheDir: `../../node_modules/.vite/util-api`,
 
-  plugins: [
-    viteTsConfigPaths({
-      root: `../../`,
-    }),
-  ],
+  plugins: [nxViteTsPaths()],
   resolve: {
     alias: {},
   },
 
   test: {
+    reporters: ['default'],
     globals: true,
     cache: {
       dir: `../../node_modules/.vitest`,
@@ -28,6 +25,7 @@ export default defineConfig({
       reporter: [`text`, `html`, `clover`, `json`, `lcov`],
       all: true,
       reportOnFailure: true,
+      reportsDirectory: '../../coverage/libs/util-api-pokemon',
     },
     logHeapUsage: true,
     silent: true,

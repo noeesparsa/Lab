@@ -5,10 +5,9 @@
   "projectType": "library",
   "targets": {
     "lint": {
-      "executor": "@nx/linter:eslint",
+      "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/util-api-pokemon/**/*.ts"],
         "quiet": true,
         "cache": true,
         "cacheLocation": "./node_modules/.cache/eslint"
@@ -16,7 +15,7 @@
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["coverage/libs/util-api-pokemon"],
+      "outputs": ["{workspaceRoot}/coverage/libs/util-api-pokemon"],
       "options": {
         "coverage": true,
         "reportsDirectory": "../../coverage/libs/util-api-pokemon"

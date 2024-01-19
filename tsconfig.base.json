@@ -36,7 +36,7 @@
     "extendedDiagnostics": true,
     "diagnostics": true,
     "checkJs": true,
-    "typeRoots": ["node_modules/@types"],
+    "typeRoots": ["node_modules/@types", "node_modules"],
     "resolveJsonModule": true,
     "paths": {
       "@lab/data-access-pokemon": ["libs/data-access-pokemon/src/index.ts"],
