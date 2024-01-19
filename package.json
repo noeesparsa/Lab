@@ -4,11 +4,11 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "prepare": "husky install",
     "lint:affected:code:ci": "nx affected:lint",
     "lint:affected:other:ci": "nx format:check",
     "lint:affected:other:hook": "nx format:write",
     "lint:affected:style:ci": "nx affected --target=stylelint",
+    "prepare": "husky install",
     "test:affected:ci": "nx affected:test --configuration=ci",
     "test:all:ci": "nx run-many --target test --configuration=ci"
   },
@@ -33,6 +33,7 @@
     "@commitlint/config-conventional": "17.7.0",
     "@ngneat/falso": "7.1.0",
     "@nx/cypress": "17.2.6",
+    "@nx/eslint": "17.2.6",
     "@nx/eslint-plugin": "17.2.6",
     "@nx/js": "17.2.6",
     "@nx/react": "17.2.6",
@@ -108,7 +109,6 @@
     "vite-plugin-pwa": "0.17.4",
     "vite-tsconfig-paths": "4.2.0",
     "vitest": "1.2.0",
-    "vitest-mock-extended": "1.3.1",
-    "@nx/eslint": "17.2.6"
+    "vitest-mock-extended": "1.3.1"
   }
 }
