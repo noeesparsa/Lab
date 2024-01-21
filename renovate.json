@@ -29,23 +29,23 @@
   },
   "minor": {
     "branchPrefix": "dependencies/minor/",
-    "automerge": true,
+    "automerge": false,
     "enabled": true
   },
   "patch": {
     "branchPrefix": "dependencies/patch/",
-    "automerge": true,
+    "automerge": false,
     "enabled": true
   },
   "pin": {
     "branchPrefix": "dependencies/pin/",
-    "automerge": true,
+    "automerge": false,
     "enabled": true
   },
   "lockFileMaintenance": {
     "branchPrefix": "dependencies/lock-file/",
     "enabled": true,
-    "automerge": true,
+    "automerge": false,
     "rebaseWhen": "behind-base-branch"
   },
   "vulnerabilityAlerts": {
