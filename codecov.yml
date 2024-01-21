@@ -70,3 +70,5 @@ ignore:
   - '**/*.interfaces.*'
   - '**/*.stories.*'
   - '**/main.tsx'
+  - '**/.eslintrc.js'
+  - '**/global.d.ts'
