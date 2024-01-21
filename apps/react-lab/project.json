@@ -54,7 +54,7 @@
     },
     "test": {
       "executor": "@nrwl/vite:test",
-      "outputs": ["coverage/apps/react-lab"],
+      "outputs": ["{workspaceRoot}/coverage/apps/react-lab"],
       "options": {
         "passWithNoTests": true,
         "reportsDirectory": "../../coverage/apps/react-lab"
@@ -66,7 +66,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["apps/react-lab/**/*.{ts,tsx,js,jsx}"]

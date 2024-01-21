@@ -1,63 +1,23 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`App > should render correctly 1`] = `
+exports[`navbar > snapshot testing > should render correctly and match the snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
-        <header
-          class="vtmn-navbar vtmn-shadow-100 "
-          data-testid="header"
-        >
-          <div
-            class="vtmn-navbar_logo"
-          >
-            <a
-              class="vtmn-flex vtmn-justify-center vtmn-items-center "
-              href="/"
-              title="Go back home"
-            >
-              <img
-                alt="Laboratory"
-                class="vtmn-h-full"
-                src="/src/assets/logo.png"
-              />
-            </a>
-          </div>
-          <div
-            class="vtmn-flex vtmn-flex-row vtmn-items-center vtmn-gap-2"
-          />
-        </header>
-      </div>
+      <nav
+        class="navbar__container"
+      >
+        tto
+      </nav>
     </div>
   </body>,
   "container": <div>
-    <div>
-      <header
-        class="vtmn-navbar vtmn-shadow-100 "
-        data-testid="header"
-      >
-        <div
-          class="vtmn-navbar_logo"
-        >
-          <a
-            class="vtmn-flex vtmn-justify-center vtmn-items-center "
-            href="/"
-            title="Go back home"
-          >
-            <img
-              alt="Laboratory"
-              class="vtmn-h-full"
-              src="/src/assets/logo.png"
-            />
-          </a>
-        </div>
-        <div
-          class="vtmn-flex vtmn-flex-row vtmn-items-center vtmn-gap-2"
-        />
-      </header>
-    </div>
+    <nav
+      class="navbar__container"
+    >
+      tto
+    </nav>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

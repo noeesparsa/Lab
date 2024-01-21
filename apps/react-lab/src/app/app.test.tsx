@@ -1,10 +1,14 @@
-import { renderWithRouter } from '../tests/render-with-router';
-
+import { RenderResult } from '@testing-library/react';
+import { expect } from 'vitest';
+import { customRender } from '../tests/custom-render';
 import App from './app';
 
-describe('App', () => {
-  it('should render correctly', async (): Promise<void> => {
-    const result = await renderWithRouter(<App />);
-    expect(result).toMatchSnapshot();
+describe('App', (): void => {
+  describe('Snapshot testing', (): void => {
+    it('should render correctly and match the snapshot', (): void => {
+      const result: RenderResult = customRender(<App />);
+
+      expect(result).toMatchSnapshot();
+    });
   });
 });

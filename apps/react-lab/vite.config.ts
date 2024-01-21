@@ -1,7 +1,7 @@
+import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 import react from '@vitejs/plugin-react';
 import { defineConfig, searchForWorkspaceRoot } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
-import viteTsConfigPaths from 'vite-tsconfig-paths';
 import { configDefaults } from 'vitest/config';
 
 export default defineConfig({
@@ -20,11 +20,17 @@ export default defineConfig({
     host: 'localhost',
   },
 
+  resolve: {
+    alias: {
+      '@lab/data-access-pokemon': '../../libs/data-access-pokemon/src',
+      '@lab/react-components': '../../libs/react-components/src',
+      '@lab/util-api-pokemon': '../../libs/util-api-pokemon/src',
+    },
+  },
+
   plugins: [
     react(),
-    viteTsConfigPaths({
-      root: '../../',
-    }),
+    nxViteTsPaths(),
     VitePWA({
       registerType: 'autoUpdate',
       devOptions: {
@@ -56,6 +62,7 @@ export default defineConfig({
   ],
 
   test: {
+    reporters: ['default'],
     globals: true,
     cache: {
       dir: '../../node_modules/.vitest',
@@ -67,6 +74,7 @@ export default defineConfig({
       exclude: [...configDefaults.exclude, '**/test-setup.mjs'],
       provider: `v8`,
       reporter: [`text`, `html`, `clover`, `json`, `lcov`],
+      reportsDirectory: '../../coverage/apps/react-lab',
     },
     logHeapUsage: true,
     silent: true,

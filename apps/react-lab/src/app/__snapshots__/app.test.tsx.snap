@@ -1,63 +1,19 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`App > should render correctly 1`] = `
+exports[`App > Snapshot testing > should render correctly and match the snapshot 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
-        <header
-          class="vtmn-navbar vtmn-shadow-100 "
-          data-testid="header"
-        >
-          <div
-            class="vtmn-navbar_logo"
-          >
-            <a
-              class="vtmn-flex vtmn-justify-center vtmn-items-center "
-              href="/"
-              title="Go back home"
-            >
-              <img
-                alt="Laboratory"
-                class="vtmn-h-full"
-                src="/src/assets/logo_without_background.png"
-              />
-            </a>
-          </div>
-          <div
-            class="vtmn-flex vtmn-flex-row vtmn-items-center vtmn-gap-2"
-          />
-        </header>
-      </div>
+      <div
+        class="vtmn-flex vtmn-flex-col vtmn-w-full vtmn-h-full vtmn-bg-background-secondary"
+      />
     </div>
   </body>,
   "container": <div>
-    <div>
-      <header
-        class="vtmn-navbar vtmn-shadow-100 "
-        data-testid="header"
-      >
-        <div
-          class="vtmn-navbar_logo"
-        >
-          <a
-            class="vtmn-flex vtmn-justify-center vtmn-items-center "
-            href="/"
-            title="Go back home"
-          >
-            <img
-              alt="Laboratory"
-              class="vtmn-h-full"
-              src="/src/assets/logo_without_background.png"
-            />
-          </a>
-        </div>
-        <div
-          class="vtmn-flex vtmn-flex-row vtmn-items-center vtmn-gap-2"
-        />
-      </header>
-    </div>
+    <div
+      class="vtmn-flex vtmn-flex-col vtmn-w-full vtmn-h-full vtmn-bg-background-secondary"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

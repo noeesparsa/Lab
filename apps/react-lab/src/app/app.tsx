@@ -1,14 +1,8 @@
 import { Outlet } from 'react-router-dom';
-import logo from '../assets/logo_without_background.png';
 
-import { Navbar } from '@lab/react-components';
-
-import './app.module.scss';
-
-export default function App(): JSX.Element {
+export default function App(): React.JSX.Element {
   return (
-    <div>
-      <Navbar logo={logo} redirection={'/'} />
+    <div className={`vtmn-flex vtmn-flex-col vtmn-w-full vtmn-h-full vtmn-bg-background-secondary`}>
       <Outlet />
     </div>
   );

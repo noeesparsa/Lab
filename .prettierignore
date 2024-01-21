@@ -1,10 +1,13 @@
-node_modules
-coverage
-dist
+/dist
+/coverage
+/node_modules
 **/*.cjs
 **/*.mjs
 **/*.ts
 **/*.js
+**/*.html
 **/*.scss
 **/*.tsx
 **/*.jsx
+
+/.nx/cache

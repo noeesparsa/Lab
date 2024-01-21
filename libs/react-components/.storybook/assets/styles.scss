@@ -1,16 +1,11 @@
 @import 'reset-css/reset.css';
-@import "typeface-roboto";
-@import "typeface-roboto-condensed";
+@import 'fontsource-roboto/400.css';
+@import 'fontsource-roboto/700.css';
+@import 'fontsource-roboto-condensed/400.css';
+@import 'fontsource-roboto-condensed/700.css';
 @import '@vtmn/icons/dist/vitamix/font/vitamix.css';
 @import '@vtmn/css-design-tokens/dist/index.css';
-@import '@vtmn/css-utilities/dist/index.css';
-@import '@vtmn/css/dist/components.css';
-@import '@vtmn/css/dist/index.css';
 
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-@import 'tailwindcss/screens';
 
 * {
   font-family: 'Roboto', sans-serif;

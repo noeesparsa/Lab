@@ -1,16 +1,23 @@
 module.exports = {
   root: true,
   ignorePatterns: ['**/*'],
+  env: {
+    node: true,
+    es6: true,
+    browser: true,
+  },
+  plugins: [
+    '@nx',
+    'progress'
+  ],
+  rules: {
+    'progress/activate': 1
+  },
   parserOptions: {
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.base.json'],
     ecmaVersion: 2020,
     sourceType: 'module',
-  },
-  env: {
-    node: true,
-    es6: true,
-    browser: true,
   },
   settings: {
     'import/extensions': [

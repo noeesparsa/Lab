@@ -63,3 +63,12 @@ ignore:
   - dist
   - tools
   - '**/test-setup.mjs'
+  - '**/tests/**'
+  - '**/constants/**'
+  - '**/*.enums.*'
+  - '**/*.types.*'
+  - '**/*.interfaces.*'
+  - '**/*.stories.*'
+  - '**/main.tsx'
+  - '**/.eslintrc.js'
+  - '**/global.d.ts'

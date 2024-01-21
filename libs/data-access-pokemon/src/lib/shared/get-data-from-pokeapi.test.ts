@@ -1,12 +1,12 @@
 import axios, { AxiosResponse } from 'axios';
 import { IPokemon } from 'pokeapi-typescript';
-import { SpyInstance, expectTypeOf } from 'vitest';
+import { MockInstance, expectTypeOf } from 'vitest';
 import { mock } from 'vitest-mock-extended';
 import { getDataFromPokeapi } from './get-data-from-pokeapi';
 
 describe('getDataFromPokeapi()', (): void => {
   let endpoint: string;
-  let axiosGetSpy: SpyInstance;
+  let axiosGetSpy: MockInstance;
 
   describe(`when an endpoint is provided`, (): void => {
     beforeEach(() => {
@@ -26,7 +26,7 @@ describe('getDataFromPokeapi()', (): void => {
 
         const result = await getDataFromPokeapi<IPokemon>(endpoint);
 
-        expect(axiosGetSpy).toHaveBeenCalledOnceWith(endpoint);
+        expect(axiosGetSpy).toHaveBeenCalledExactlyOnceWith(endpoint);
         expectTypeOf(result).toMatchTypeOf<IPokemon>();
       });
 

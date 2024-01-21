@@ -1,12 +1,12 @@
 import { AxiosResponse } from 'axios';
 import { IPokemon } from 'pokeapi-typescript';
-import { SpyInstance } from 'vitest';
+import { MockInstance } from 'vitest';
 import { mock } from 'vitest-mock-extended';
 import { getPokemonById } from './get-pokemon-by-id';
 import { AxiosPokemon } from '@lab/util-api-pokemon';
 
 describe(`getPokemonById()`, (): void => {
-  let axiosPokemonGetSpy: SpyInstance;
+  let axiosPokemonGetSpy: MockInstance;
   let axiosResponse: AxiosResponse<IPokemon>;
   let pokemonId: number;
 
@@ -21,7 +21,7 @@ describe(`getPokemonById()`, (): void => {
 
     await getPokemonById(pokemonId);
 
-    expect(axiosPokemonGetSpy).toHaveBeenCalledOnceWith(`pokemon/${pokemonId}`);
+    expect(axiosPokemonGetSpy).toHaveBeenCalledExactlyOnceWith(`pokemon/${pokemonId}`);
   });
 
   describe(`when the pokeapi is up`, (): void => {
