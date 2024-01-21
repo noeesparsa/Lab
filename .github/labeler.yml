@@ -1,13 +1,21 @@
-github:
-  - '.github/**/*'
-javascript:
-  - '**/*.js'
-  - '**/*.jsx'
-typescript:
-  - '**/*.ts'
-  - '**/*.tsx'
-apps:
-  - ' apps/**/*'
-libs:
-  - ' libs/**/*'
+'Chore :gear:':
+  - head-branch: ['^chore', 'chore']
 
+'Dependencies :package:':
+  - head-branch: ['^dependencies', 'dependencies']
+
+'Docs :books:':
+  - head-branch: ['^docs', 'docs']
+
+'Feature :sparkles:':
+  - head-branch: ['^feat', 'feat']
+
+'Fix :lady_beetle:':
+  - head-branch: ['^fix', 'fix']
+
+'Refactor :hammer_and_wrench:':
+  - head-branch: ['^refactor', 'refactor']
+
+'Actions :rocket:':
+  - changed-files:
+      - any-glob-to-any-file: '.github/**/*'
