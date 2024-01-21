@@ -5,12 +5,15 @@ on:
     types: [opened, edited, synchronize]
 
 jobs:
-  labeler:
+  pr-auto-labelling:
     permissions:
       contents: read
       pull-requests: write
+    timeout-minutes: 10
     runs-on: ubuntu-latest
+    if: ${{ github.actor != 'dependabot[bot]' }}
     steps:
-      - uses: actions/labeler@v4
+      - uses: actions/labeler@v5
         with:
-          repo-token: "${{secrets.GITHUB_TOKEN}}"
+          repo-token: '${{ secrets.GITHUB_TOKEN }}'
+          configuration-path: .github/labeler.yml
