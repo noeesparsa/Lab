@@ -63,3 +63,9 @@ ignore:
   - dist
   - tools
   - '**/test-setup.mjs'
+  - '**/tests/**'
+  - '**/constants/**'
+  - '**/*.enums.*'
+  - '**/*.types.*'
+  - '**/*.interfaces.*'
+  - '**/*.stories.*'
