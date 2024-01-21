@@ -69,3 +69,4 @@ ignore:
   - '**/*.types.*'
   - '**/*.interfaces.*'
   - '**/*.stories.*'
+  - '**/main.tsx'
