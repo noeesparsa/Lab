@@ -3,10 +3,11 @@ import react from '@vitejs/plugin-react';
 import { defineConfig, searchForWorkspaceRoot } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 import { configDefaults } from 'vitest/config';
+import appRootPath from 'app-root-path';
 
 export default defineConfig({
   cacheDir: '../../node_modules/.vite/react-lab',
-
+  publicDir: `public`,
   server: {
     port: 4200,
     host: 'localhost',
@@ -22,9 +23,9 @@ export default defineConfig({
 
   resolve: {
     alias: {
-      '@lab/data-access-pokemon': '../../libs/data-access-pokemon/src',
-      '@lab/react-components': '../../libs/react-components/src',
-      '@lab/util-api-pokemon': '../../libs/util-api-pokemon/src',
+      '@lab/data-access-pokemon': `${appRootPath.path}/libs/data-access-pokemon/src`,
+      '@lab/react-components': `${appRootPath.path}/libs/react-components/src`,
+      '@lab/util-api-pokemon': `${appRootPath.path}/libs/util-api-pokemon/src`,
     },
   },
 

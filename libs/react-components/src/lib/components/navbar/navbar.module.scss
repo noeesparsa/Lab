@@ -1,5 +1,38 @@
-.navbar__container {
+@import "../../styles/colors";
+
+.navbar {
+  height: 4rem;
   display: flex;
-  width: 100%;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
   background: var(--vtmn-semantic-color_background-primary);
+  padding: var(--vtmn-spacing_2) var(--vtmn-spacing_4);
+
+  &__logo {
+    &__container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+    }
+
+    &__image {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+
+    &__title {
+      font-weight: 700;
+      color: $primary-color;
+    }
+  }
+
+  &__buttons {
+    &__container {
+      display: flex;
+      flex-direction: row;
+      gap: var(--vtmn-spacing_2);
+    }
+  }
 }
