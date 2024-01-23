@@ -6,14 +6,214 @@ exports[`App > Snapshot testing > should render correctly and match the snapshot
   "baseElement": <body>
     <div>
       <div
-        class="vtmn-flex vtmn-flex-col vtmn-w-full vtmn-h-full vtmn-bg-background-secondary"
-      />
+        class="_skeleton_4dcdac"
+      >
+        <header
+          class="_skeleton__header_4dcdac"
+        >
+          <div
+            class="_navbar_75281d"
+          >
+            <div
+              class="_navbar__logo__container_75281d"
+            >
+              <img
+                alt="applicaiton logo"
+                class="_navbar__logo__image_75281d"
+                src="../../public/logo.png"
+              />
+              <p
+                class="_navbar__logo__title_75281d _typo_text-2_75281d"
+              >
+                Laboratory
+              </p>
+            </div>
+            <div
+              class="_navbar__buttons__container_75281d"
+            >
+              <button
+                class="vtmn-btn vtmn-btn_variant--primary vtmn-btn_size--medium    vtmn-btn--icon-alone"
+              >
+                <span
+                  class="vtmx-home-fill "
+                />
+              </button>
+              <button
+                class="vtmn-btn vtmn-btn_variant--primary vtmn-btn_size--medium    vtmn-btn--icon-alone"
+              >
+                <span
+                  class="vtmx-user-fill "
+                />
+              </button>
+            </div>
+          </div>
+        </header>
+        <div
+          class="_skeleton__container_4dcdac"
+        >
+          <nav
+            class="_skeleton__menu_4dcdac"
+          >
+            <div
+              class="_menu_9aebe9 _flex_9aebe9"
+              role="menubar"
+            >
+              <div
+                class="_hiddenMobile_9aebe9"
+              >
+                <button
+                  aria-label="sidebar_menu_button"
+                  class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--stretched _toggle-button_9aebe9   "
+                  title="toogle menu"
+                >
+                  <span
+                    class="vtmx-menu-line "
+                    data-testid="react--components--sidebar--menu-button"
+                    style="font-size: 24px;"
+                  />
+                </button>
+              </div>
+              <ul
+                class="_menu__list_9aebe9 _flex_9aebe9"
+              >
+                <li>
+                  <button
+                    class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--stretched _button--collapsed_14eaf3   "
+                    title="button1"
+                  >
+                    <span
+                      class="vtmx-home-line "
+                      data-testid="react--components--sidebar--menu--button--icon"
+                      style="font-size: 24px;"
+                    />
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--stretched _button--collapsed_14eaf3   "
+                    title="button2"
+                  >
+                    <span
+                      class="vtmx-home-line "
+                      data-testid="react--components--sidebar--menu--button--icon"
+                      style="font-size: 24px;"
+                    />
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <main
+            class="_skeleton__content_4dcdac"
+          />
+        </div>
+      </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="vtmn-flex vtmn-flex-col vtmn-w-full vtmn-h-full vtmn-bg-background-secondary"
-    />
+      class="_skeleton_4dcdac"
+    >
+      <header
+        class="_skeleton__header_4dcdac"
+      >
+        <div
+          class="_navbar_75281d"
+        >
+          <div
+            class="_navbar__logo__container_75281d"
+          >
+            <img
+              alt="applicaiton logo"
+              class="_navbar__logo__image_75281d"
+              src="../../public/logo.png"
+            />
+            <p
+              class="_navbar__logo__title_75281d _typo_text-2_75281d"
+            >
+              Laboratory
+            </p>
+          </div>
+          <div
+            class="_navbar__buttons__container_75281d"
+          >
+            <button
+              class="vtmn-btn vtmn-btn_variant--primary vtmn-btn_size--medium    vtmn-btn--icon-alone"
+            >
+              <span
+                class="vtmx-home-fill "
+              />
+            </button>
+            <button
+              class="vtmn-btn vtmn-btn_variant--primary vtmn-btn_size--medium    vtmn-btn--icon-alone"
+            >
+              <span
+                class="vtmx-user-fill "
+              />
+            </button>
+          </div>
+        </div>
+      </header>
+      <div
+        class="_skeleton__container_4dcdac"
+      >
+        <nav
+          class="_skeleton__menu_4dcdac"
+        >
+          <div
+            class="_menu_9aebe9 _flex_9aebe9"
+            role="menubar"
+          >
+            <div
+              class="_hiddenMobile_9aebe9"
+            >
+              <button
+                aria-label="sidebar_menu_button"
+                class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--stretched _toggle-button_9aebe9   "
+                title="toogle menu"
+              >
+                <span
+                  class="vtmx-menu-line "
+                  data-testid="react--components--sidebar--menu-button"
+                  style="font-size: 24px;"
+                />
+              </button>
+            </div>
+            <ul
+              class="_menu__list_9aebe9 _flex_9aebe9"
+            >
+              <li>
+                <button
+                  class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--stretched _button--collapsed_14eaf3   "
+                  title="button1"
+                >
+                  <span
+                    class="vtmx-home-line "
+                    data-testid="react--components--sidebar--menu--button--icon"
+                    style="font-size: 24px;"
+                  />
+                </button>
+              </li>
+              <li>
+                <button
+                  class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--stretched _button--collapsed_14eaf3   "
+                  title="button2"
+                >
+                  <span
+                    class="vtmx-home-line "
+                    data-testid="react--components--sidebar--menu--button--icon"
+                    style="font-size: 24px;"
+                  />
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <main
+          class="_skeleton__content_4dcdac"
+        />
+      </div>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

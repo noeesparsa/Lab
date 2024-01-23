@@ -5,19 +5,51 @@ exports[`navbar > snapshot testing > should render correctly and match the snaps
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <nav
-        class="navbar__container"
+      <div
+        class="navbar"
       >
-        tto
-      </nav>
+        <div
+          class="navbar__logo__container"
+        >
+          <img
+            alt="applicaiton logo"
+            class="navbar__logo__image"
+            src="path/to/logo"
+          />
+          <p
+            class="navbar__logo__title typo_text-2"
+          >
+            Laboratory
+          </p>
+        </div>
+        <div
+          class="navbar__buttons__container"
+        />
+      </div>
     </div>
   </body>,
   "container": <div>
-    <nav
-      class="navbar__container"
+    <div
+      class="navbar"
     >
-      tto
-    </nav>
+      <div
+        class="navbar__logo__container"
+      >
+        <img
+          alt="applicaiton logo"
+          class="navbar__logo__image"
+          src="path/to/logo"
+        />
+        <p
+          class="navbar__logo__title typo_text-2"
+        >
+          Laboratory
+        </p>
+      </div>
+      <div
+        class="navbar__buttons__container"
+      />
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

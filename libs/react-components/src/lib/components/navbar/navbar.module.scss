@@ -8,6 +8,8 @@
   align-items: center;
   background: var(--vtmn-semantic-color_background-primary);
   padding: var(--vtmn-spacing_2) var(--vtmn-spacing_4);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+
 
   &__logo {
     &__container {

@@ -7,6 +7,10 @@ module.exports = {
     project: ['./tsconfig.*.json', './.storybook/tsconfig.json'],
   },
   plugins: ['@typescript-eslint'],
+  globals: {
+    vi: `readonly`,
+    JSX: `readonly`,
+  },
   overrides: [
     {
       files: ['*.ts', '*.tsx', '*.js', '*.jsx'],

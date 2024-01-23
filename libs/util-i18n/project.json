@@ -1,0 +1,31 @@
+{
+  "name": "util-i18n",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/util-i18n/src",
+  "projectType": "library",
+  "tags": ["util", "util-i18n"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/util-i18n/**/*.{ts,tsx,js,jsx}"],
+        "quiet": true,
+        "cache": true,
+        "cacheLocation": "./node_modules/.cache/eslint"
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{workspaceRoot}/coverage/libs/util-i18n"],
+      "options": {
+        "reportsDirectory": "../../coverage/libs/util-i18n"
+      },
+      "configurations": {
+        "ci": {
+          "coverage": true
+        }
+      }
+    }
+  }
+}

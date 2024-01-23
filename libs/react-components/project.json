@@ -16,7 +16,7 @@
       }
     },
     "test": {
-      "executor": "@nrwl/vite:test",
+      "executor": "@nx/vite:test",
       "outputs": ["{workspaceRoot}/coverage/libs/react-components"],
       "options": {
         "coverage": true,
