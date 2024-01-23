@@ -2,6 +2,10 @@ plugins:
   eslint:
     enabled: true
     channel: 'eslint-8'
+    config:
+      extensions:
+        - .ts
+        - .tsx
 exclude_patterns:
   - '**/*.config.js'
   - '**/*.test.ts*'
