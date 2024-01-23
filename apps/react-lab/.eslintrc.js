@@ -1,3 +1,5 @@
+const appRootPath = require(`app-root-path`);
+
 module.exports = {
   extends: ['../../.eslintrc.js'],
   ignorePatterns: ['!**/*'],
@@ -5,6 +7,10 @@ module.exports = {
   parserOptions: {
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.*.json'],
+  },
+  globals: {
+    JSX: `readonly`,
+    vi: `readonly`,
   },
   settings: {
     'import/resolver': {
@@ -16,6 +22,13 @@ module.exports = {
         alwaysTryTypes: true,
         project: ['apps/react-lab/tsconfig.json'],
       },
+    },
+    'eslint-import-resolver-custom-alias': {
+      alias: {
+        '@front/react-components': `${appRootPath.path}/libs/react-components/src/`,
+        '@front/util-i18n': `${appRootPath.path}/libs/util-i18n/src/`,
+      },
+      extensions: [`.ts`, `.js`, `.cjs`, `.mjs`, `.tsx`],
     },
   },
 

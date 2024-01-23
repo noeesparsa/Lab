@@ -26,6 +26,7 @@ export default defineConfig({
       '@lab/data-access-pokemon': `${appRootPath.path}/libs/data-access-pokemon/src`,
       '@lab/react-components': `${appRootPath.path}/libs/react-components/src`,
       '@lab/util-api-pokemon': `${appRootPath.path}/libs/util-api-pokemon/src`,
+      '@lab/util-i18n': `${appRootPath.path}/libs/util-i18n/src`,
     },
   },
 
