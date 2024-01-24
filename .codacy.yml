@@ -1,0 +1,10 @@
+---
+engines:
+  duplication:
+    exclude_paths:
+      - '**/*.test.*'
+      - '**/.eslintrc.js'
+      - '**/tests/**'
+exclude_paths:
+  - '**/tests/**'
+  - - '**/.eslintrc.js'
