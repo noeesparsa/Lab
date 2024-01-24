@@ -6,5 +6,7 @@ engines:
       - '**/.eslintrc.js'
       - '**/tests/**'
 exclude_paths:
+  - '**/*.test.ts'
+  - '**/*.test.tsx'
   - '**/tests/**'
-  - - '**/.eslintrc.js'
+  - '**/.eslintrc.js'
