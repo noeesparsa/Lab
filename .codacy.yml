@@ -2,11 +2,11 @@
 engines:
   duplication:
     exclude_paths:
-      - '**/*.test.*'
+      - '**/*.test.ts'
+      - '**/*.test.tsx'
       - '**/.eslintrc.js'
       - '**/tests/**'
 exclude_paths:
-  - '**/*.test.ts'
-  - '**/*.test.tsx'
   - '**/tests/**'
   - '**/.eslintrc.js'
+  - '**/*.config.*'
