@@ -17,7 +17,6 @@ const config: StorybookConfig = {
     `@storybook/addon-essentials`,
     `@storybook/addon-a11y`,
     `@storybook/preset-scss`,
-    `storybook-dark-mode`,
     `@storybook/addon-storysource`,
   ],
   framework: {

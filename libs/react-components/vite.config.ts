@@ -17,6 +17,7 @@ export default defineConfig({
   test: {
     reporters: ['default'],
     globals: true,
+    watch: false,
     cache: {
       dir: '../../node_modules/.vitest',
     },

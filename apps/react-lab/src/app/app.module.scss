@@ -1,0 +1,42 @@
+@import '../breakpoints';
+
+.skeleton {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--vtmn-semantic-color_background-tertiary);
+
+  &__header {
+    z-index: 20;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 4rem);
+  }
+
+  &__menu {
+    z-index: 10;
+    overflow-y: auto;
+    flex-shrink: 1;
+    background: var(--vtmn-semantic-color_background-primary);
+  }
+
+  &__content {
+    overflow-y: auto;
+    flex-shrink: 12;
+  }
+}
+
+@media screen and (max-width: mediaquery(mobile-max)) {
+  .skeleton__container {
+    flex-direction: column;
+  }
+
+  .skeleton__menu {
+    overflow: auto hidden;
+  }
+}
+
+

@@ -1,0 +1,12 @@
+---
+engines:
+  duplication:
+    exclude_paths:
+      - '**/*.test.ts'
+      - '**/*.test.tsx'
+      - '**/.eslintrc.js'
+      - '**/tests/**'
+exclude_paths:
+  - '**/tests/**'
+  - '**/.eslintrc.js'
+  - '**/*.config.*'

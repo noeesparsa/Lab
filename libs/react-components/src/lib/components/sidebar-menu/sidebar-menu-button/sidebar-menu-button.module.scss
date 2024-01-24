@@ -1,0 +1,9 @@
+.button--collapsed {
+  border-radius: 0;
+}
+
+:global(.vtmn-btn).button--uncollapsed {
+    border-radius: 0;
+    justify-content: start;
+    padding-left: var(--vtmn-spacing_4);
+}
