@@ -12,6 +12,5 @@
     "src/**/*.test.jsx",
     "src/**/*.d.ts"
   ],
-  "files": ["global.d.ts"],
-
+  "files": ["global.d.ts"]
 }
