@@ -34,7 +34,7 @@
   "devDependencies": {
     "@commitlint/cli": "17.7.2",
     "@commitlint/config-conventional": "17.7.0",
-    "@ngneat/falso": "7.1.0",
+    "@ngneat/falso": "7.1.1",
     "@nx/cypress": "17.2.6",
     "@nx/eslint": "17.2.6",
     "@nx/eslint-plugin": "17.2.6",
