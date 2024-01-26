@@ -29,7 +29,7 @@
     "react-i18next": "14.0.0",
     "react-router-dom": "6.21.2",
     "reset-css": "5.0.2",
-    "tslib": "2.6.0"
+    "tslib": "2.6.2"
   },
   "devDependencies": {
     "@commitlint/cli": "17.7.2",
