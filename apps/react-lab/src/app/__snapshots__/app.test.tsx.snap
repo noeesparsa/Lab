@@ -20,7 +20,7 @@ exports[`App > Snapshot testing > should render correctly and match the snapshot
               <img
                 alt="applicaiton logo"
                 class="_navbar__logo__image_75281d"
-                src="../../public/logo.png"
+                src="/logo.png"
               />
               <p
                 class="_navbar__logo__title_75281d _typo_text-2_75281d"
@@ -126,7 +126,7 @@ exports[`App > Snapshot testing > should render correctly and match the snapshot
             <img
               alt="applicaiton logo"
               class="_navbar__logo__image_75281d"
-              src="../../public/logo.png"
+              src="/logo.png"
             />
             <p
               class="_navbar__logo__title_75281d _typo_text-2_75281d"

@@ -10,7 +10,7 @@ export default function App(): React.JSX.Element {
     <div className={cx('skeleton')}>
       <header className={cx('skeleton__header')}>
         <Navbar
-          logoUrl="../../public/logo.png"
+          logoUrl="/logo.png"
           buttons={[
             <VtmnButton key={1} size={'medium'} iconAlone="home-fill" />,
             <VtmnButton key={2} size={'medium'} iconAlone="user-fill" />,
