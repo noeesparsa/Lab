@@ -3,7 +3,7 @@
   "extends": ["config:best-practices"],
   "separateMajorMinor": true,
   "separateMultipleMajor": true,
-  "rebaseWhen": "auto",
+  "rebaseWhen": "behind-base-branch",
   "ignoreTests": false,
   "ignoreUnstable": true,
   "respectLatest": true,
