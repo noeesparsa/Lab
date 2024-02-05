@@ -25,25 +25,25 @@
     "branchPrefix": "dependencies/major/",
     "automerge": false,
     "enabled": true,
-    "rebaseWhen": "conflicted"
+    "rebaseWhen": "behind-base-branch"
   },
   "minor": {
     "branchPrefix": "dependencies/minor/",
     "automerge": false,
     "enabled": true,
-    "rebaseWhen": "conflicted"
+    "rebaseWhen": "behind-base-branch"
   },
   "patch": {
     "branchPrefix": "dependencies/patch/",
     "automerge": true,
     "enabled": true,
-    "rebaseWhen": "conflicted"
+    "rebaseWhen": "behind-base-branch"
   },
   "pin": {
     "branchPrefix": "dependencies/pin/",
     "automerge": true,
     "enabled": true,
-    "rebaseWhen": "conflicted"
+    "rebaseWhen": "behind-base-branch"
   },
   "lockFileMaintenance": {
     "branchPrefix": "dependencies/lock-file/",
