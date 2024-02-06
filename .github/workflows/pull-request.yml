@@ -2,7 +2,6 @@ name: Pull Request Workflow
 on:
   push:
     branches:
-      - dev
       - main
   pull_request:
 
@@ -11,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Nx set shas
-        uses: nrwl/nx-set-shas@76907e7e5d3cd17ddb5e2b123389f054bffcdd03 # v4
+        uses: nrwl/nx-set-shas@v4
 
       - name: Install dependencies
         run: npm ci
@@ -27,7 +26,7 @@ jobs:
         run: npx nx affected -t test --parallel=3 --configuration=ci
 
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@ab904c41d6ece82784817410c45d8b8c02684457 # v3
+        uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
 
