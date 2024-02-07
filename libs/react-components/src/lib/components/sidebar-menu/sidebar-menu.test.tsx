@@ -1,4 +1,4 @@
-import { randDirectoryPath, randSentence, randText, randUuid, randWord } from '@ngneat/falso';
+import { randUuid } from '@ngneat/falso';
 import { RenderResult, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { EReactComponentsDataTestId } from '../../enums';
@@ -45,10 +45,10 @@ describe(`uiSidebarMenu`, (): void => {
   });
 
   describe('component testing', (): void => {
-    const menuButton1Text: string = randWord();
-    const menuButton2Text: string = randWord();
-    const menuButton1Title: string = randSentence();
-    const menuButton2Title: string = randSentence();
+    const menuButton1Text: string = 'Button 1';
+    const menuButton2Text: string = 'Button 2';
+    const menuButton1Title: string = 'Button 1 title';
+    const menuButton2Title: string = 'Button 2 title';
 
     beforeEach((): void => {
       menuButtons = [
@@ -57,17 +57,17 @@ describe(`uiSidebarMenu`, (): void => {
           icon: `home-line`,
           text: menuButton1Text,
           title: menuButton1Title,
-          redirectPath: randDirectoryPath(),
+          redirectPath: '/redirect/path/1',
         },
         {
           key: randUuid(),
           icon: `settings-line`,
           text: menuButton2Text,
           title: menuButton2Title,
-          redirectPath: randDirectoryPath(),
+          redirectPath: '/redirect/path/2',
         },
       ];
-      menuButtonTitle = randText();
+      menuButtonTitle = 'Menu button title';
     });
 
     it(`should render all the given menu buttons`, async (): Promise<void> => {
