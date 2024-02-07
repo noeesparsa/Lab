@@ -27,24 +27,6 @@ const PREVIEW = {
       theme: themes.light,
       inlineStories: false,
     },
-    darkMode: {
-      dark: {
-        ...themes.dark,
-        brandTitle: `UI Components`,
-        colorPrimary: `#007DBC`,
-        stylePreview: true,
-      },
-      light: {
-        ...themes.light,
-        brandTitle: `UI Components`,
-        colorPrimary: `#007DBC`,
-        stylePreview: true,
-      },
-      classTarget: `html`,
-      darkClass: `vtmn-theme_core--dark`,
-      lightClass: `vtmn-theme_core--light`,
-      current: `light`,
-    },
     options: {
       storySort: {
         method: `alphabetical`,
