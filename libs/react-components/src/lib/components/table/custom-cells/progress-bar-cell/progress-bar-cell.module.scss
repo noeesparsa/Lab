@@ -1,0 +1,22 @@
+.progressbar__container {
+  max-width: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: left;
+}
+
+
+progress {
+  width: auto;
+  height: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+  background-color: var(--vtmn-semantic-color_background-tertiary);
+}
+
+progress::-webkit-progress-value {
+  background-color: var(--vtmn-semantic-color_background-brand-primary);
+}
