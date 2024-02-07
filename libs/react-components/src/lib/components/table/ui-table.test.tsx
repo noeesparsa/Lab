@@ -1,5 +1,6 @@
 import { ColumnDef } from '@tanstack/react-table';
 import { RenderResult, render, screen } from '@testing-library/react';
+import { beforeEach } from 'vitest';
 import { UI_TABLE_DEMO_DATA } from './constants';
 import { EDemoStatusTag } from './enums';
 import { getTableDemoColumnsDef } from './functions';
@@ -12,11 +13,14 @@ describe('uiTable', (): void => {
 
   beforeEach((): void => {
     tableData = UI_TABLE_DEMO_DATA;
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
     tableColumns = getTableDemoColumnsDef();
   });
 
   describe('snapshot testing', (): void => {
     it(`should render correctly and match the snapshot`, (): void => {
+      expect.assertions(1);
       const result: RenderResult = render(<UiTable data={tableData} columns={tableColumns} />);
 
       expect(result).toMatchSnapshot();
@@ -25,6 +29,7 @@ describe('uiTable', (): void => {
 
   describe('component testing', (): void => {
     it(`should render the table with correct number of row and columns`, (): void => {
+      expect.assertions(3);
       render(<UiTable data={tableData} columns={tableColumns} />);
 
       const tableElement: HTMLElement = screen.getByRole('table');
@@ -37,6 +42,7 @@ describe('uiTable', (): void => {
     });
 
     it(`should render the string column`, (): void => {
+      expect.assertions(4);
       render(<UiTable data={tableData} columns={tableColumns} />);
 
       const stringColumnHeaderElement: HTMLElement = screen.getByRole('columnheader', { name: /string header/i });
@@ -51,6 +57,7 @@ describe('uiTable', (): void => {
     });
 
     it(`should render the number column`, (): void => {
+      expect.assertions(4);
       render(<UiTable data={tableData} columns={tableColumns} />);
 
       const numberColumnHeaderElement: HTMLElement = screen.getByRole('columnheader', { name: /number header/i });
@@ -65,6 +72,7 @@ describe('uiTable', (): void => {
     });
 
     it(`should render the image column`, (): void => {
+      expect.assertions(2);
       render(<UiTable data={tableData} columns={tableColumns} />);
 
       const imageColumnHeaderElement: HTMLElement = screen.getByRole('columnheader', { name: /image header/i });
@@ -75,6 +83,7 @@ describe('uiTable', (): void => {
     });
 
     it(`should render the boolean column`, (): void => {
+      expect.assertions(3);
       render(<UiTable data={tableData} columns={tableColumns} />);
 
       const imageColumnHeaderElement: HTMLElement = screen.getByRole('columnheader', { name: /boolean header/i });
@@ -87,6 +96,7 @@ describe('uiTable', (): void => {
     });
 
     it(`should render the status tag column`, (): void => {
+      expect.assertions(4);
       render(<UiTable data={tableData} columns={tableColumns} />);
 
       const imageColumnHeaderElement: HTMLElement = screen.getByRole('columnheader', { name: /status header/i });
@@ -101,6 +111,7 @@ describe('uiTable', (): void => {
     });
 
     it(`should render the progressbar  column`, (): void => {
+      expect.assertions(2);
       render(<UiTable data={tableData} columns={tableColumns} />);
 
       const imageColumnHeaderElement: HTMLElement = screen.getByRole('columnheader', { name: /progressbar header/i });

@@ -28,7 +28,6 @@ module.exports = {
       files: [`**/*.test.tsx`, `**/*.test.ts`],
       plugins: [`vitest`, `jest-extended`],
       extends: [`plugin:vitest/all`, `plugin:jest-extended/all`],
-
       rules: {},
     },
   ],
