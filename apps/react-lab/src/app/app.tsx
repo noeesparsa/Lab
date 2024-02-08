@@ -1,9 +1,8 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
 import { Outlet } from 'react-router-dom';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import styles from './app.module.scss';
-import { Navbar, SidebarMenu } from '@lab/react-components';
+import { IconLink, Navbar, SidebarMenu } from '@lab/react-components';
 
 export default function App(): React.JSX.Element {
   const cx = classNames.bind(styles);
@@ -13,24 +12,13 @@ export default function App(): React.JSX.Element {
         <Navbar
           logoUrl="/logo.png"
           buttons={[
-            <a
-              key={1}
-              href="https://github.com/Rangoow/Lab"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={cx('skeleton__header__link')}
-            >
-              <FontAwesomeIcon key={1} size="lg" icon={faGithub} />
-            </a>,
-            <a
-              key={2}
-              href="https://www.linkedin.com/in/no%C3%A9-esparsa-22557213a/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={cx('skeleton__header__link')}
-            >
-              <FontAwesomeIcon key={1} size="lg" icon={faLinkedin} />
-            </a>,
+            <IconLink
+              key="1"
+              link="https://www.linkedin.com/in/no%C3%A9-esparsa-22557213a/"
+              iconSize="lg"
+              icon={faLinkedin}
+            />,
+            <IconLink key="2" link="https://github.com/Rangoow/Lab" iconSize="lg" icon={faGithub} />,
           ]}
         />
       </header>
