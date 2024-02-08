@@ -7,30 +7,14 @@ import {
   getSortedRowModel,
   useReactTable,
 } from '@tanstack/react-table';
-import { VtmnIcon } from '@vtmn/react';
 import classNames from 'classnames/bind';
 import { useState } from 'react';
+import { getSortIcon } from './functions/get-sort-icon';
 import styles from './ui-table.module.scss';
 
 interface IProps<T extends object> {
   readonly columns: ColumnDef<T>[];
   readonly data: T[];
-}
-
-function getSortIcon(currentSorting: string): React.JSX.Element {
-  switch (currentSorting) {
-    case 'asc': {
-      return <VtmnIcon value="arrow-up-fill" variant={'brand'} />;
-    }
-
-    case 'desc': {
-      return <VtmnIcon value="arrow-down-fill" variant={'brand'} />;
-    }
-
-    default: {
-      return <VtmnIcon value={'arrow-up-down-fill'} variant={'brand'} />;
-    }
-  }
 }
 
 export function UiTable<TData extends object>({ columns, data }: IProps<TData>): React.JSX.Element {
