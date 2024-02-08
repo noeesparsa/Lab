@@ -1,0 +1,1371 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`UiTable > snapshot testing > should render correctly and match the snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <table
+        class="ui-table"
+      >
+        <thead
+          class="ui-table__header typo_text-3"
+        >
+          <tr>
+            <th
+              class="ui-table__header__cell"
+            >
+              <button
+                class="ui-table__header__cell__sortable"
+              >
+                String header
+                <span
+                  class="vtmx-arrow-up-down-fill "
+                  style="font-size: 24px;"
+                />
+              </button>
+            </th>
+            <th
+              class="ui-table__header__cell"
+            >
+              <button
+                class="ui-table__header__cell__sortable"
+              >
+                Number header
+                <span
+                  class="vtmx-arrow-up-down-fill "
+                  style="font-size: 24px;"
+                />
+              </button>
+            </th>
+            <th
+              class="ui-table__header__cell"
+            >
+              <button
+                class="ui-table__header__cell__non-sortable"
+              >
+                Image header
+              </button>
+            </th>
+            <th
+              class="ui-table__header__cell"
+            >
+              <button
+                class="ui-table__header__cell__sortable"
+              >
+                Date header
+                <span
+                  class="vtmx-arrow-up-down-fill "
+                  style="font-size: 24px;"
+                />
+              </button>
+            </th>
+            <th
+              class="ui-table__header__cell"
+            >
+              <button
+                class="ui-table__header__cell__sortable"
+              >
+                Boolean header
+                <span
+                  class="vtmx-arrow-up-down-fill "
+                  style="font-size: 24px;"
+                />
+              </button>
+            </th>
+            <th
+              class="ui-table__header__cell"
+            >
+              <button
+                class="ui-table__header__cell__sortable"
+              >
+                Status header
+                <span
+                  class="vtmx-arrow-up-down-fill "
+                  style="font-size: 24px;"
+                />
+              </button>
+            </th>
+            <th
+              class="ui-table__header__cell"
+            >
+              <button
+                class="ui-table__header__cell__sortable"
+              >
+                ProgressBar header
+                <span
+                  class="vtmx-arrow-up-down-fill "
+                  style="font-size: 24px;"
+                />
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="ui-table__body"
+        >
+          <tr
+            class="ui-table__body__row"
+          >
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              string_1
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              1
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <p>
+                <img
+                  alt="this is an image cell"
+                  class="image_cell"
+                  src="https://contents.mediadecathlon.com/p2307093/k$95b46fa90b4ee1ffcacc8fdff4371e30/sq/ballon-ligue-1-uber-eats-officiel-club-2022-2023-fifa-basic-hybride-taille-5.jpg?f=3000x3000"
+                />
+              </p>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <p>
+                01/01/2024
+              </p>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <span
+                class="vtmn-tag vtmn-tag_variant--decorative_brick vtmn-tag_size--medium "
+              >
+                FALSE
+              </span>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <span
+                class="vtmn-tag vtmn-tag_variant--decorative_emerald vtmn-tag_size--medium "
+              >
+                STATUS 1
+              </span>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <div
+                class="progressbar__container"
+              >
+                <span
+                  class="typo_text-3"
+                >
+                  50
+                   / 
+                  100
+                </span>
+                <progress
+                  aria-labelledby="progress-bar-text"
+                  max="100"
+                  value="50"
+                />
+              </div>
+            </td>
+          </tr>
+          <tr
+            class="ui-table__body__row"
+          >
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              string_2
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              2
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <p>
+                <img
+                  alt="this is an image cell"
+                  class="image_cell"
+                  src="https://contents.mediadecathlon.com/p2561179/k$ecc2eabea2a4941ff4b1bfaeca52b963/sq/velo-ville-electrique-a-moteur-automatique-owuru-cadre-bas-ld-920-e.jpg?f=3000x3000"
+                />
+              </p>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <p>
+                02/01/2024
+              </p>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <span
+                class="vtmn-tag vtmn-tag_variant--decorative_jade vtmn-tag_size--medium "
+              >
+                TRUE
+              </span>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <span
+                class="vtmn-tag vtmn-tag_variant--decorative_gold vtmn-tag_size--medium "
+              >
+                STATUS 2
+              </span>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <div
+                class="progressbar__container"
+              >
+                <span
+                  class="typo_text-3"
+                >
+                  50
+                   / 
+                  200
+                </span>
+                <progress
+                  aria-labelledby="progress-bar-text"
+                  max="200"
+                  value="50"
+                />
+              </div>
+            </td>
+          </tr>
+          <tr
+            class="ui-table__body__row"
+          >
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              string_3
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              3
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <p>
+                <img
+                  alt="this is an image cell"
+                  class="image_cell"
+                  src="https://contents.mediadecathlon.com/p2530633/k$449fdab7d9007d9bae37e8ae17ea3cb3/sq/ballon-de-handball-molten-hx3400-ffhb-taille-2.jpg?f=3000x3000"
+                />
+              </p>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <p>
+                03/01/2024
+              </p>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <span
+                class="vtmn-tag vtmn-tag_variant--decorative_brick vtmn-tag_size--medium "
+              >
+                FALSE
+              </span>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <span
+                class="vtmn-tag vtmn-tag_variant--decorative_cobalt vtmn-tag_size--medium "
+              >
+                STATUS 3
+              </span>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <div
+                class="progressbar__container"
+              >
+                <span
+                  class="typo_text-3"
+                >
+                  150
+                   / 
+                  200
+                </span>
+                <progress
+                  aria-labelledby="progress-bar-text"
+                  max="200"
+                  value="150"
+                />
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>,
+  "container": <div>
+    <table
+      class="ui-table"
+    >
+      <thead
+        class="ui-table__header typo_text-3"
+      >
+        <tr>
+          <th
+            class="ui-table__header__cell"
+          >
+            <button
+              class="ui-table__header__cell__sortable"
+            >
+              String header
+              <span
+                class="vtmx-arrow-up-down-fill "
+                style="font-size: 24px;"
+              />
+            </button>
+          </th>
+          <th
+            class="ui-table__header__cell"
+          >
+            <button
+              class="ui-table__header__cell__sortable"
+            >
+              Number header
+              <span
+                class="vtmx-arrow-up-down-fill "
+                style="font-size: 24px;"
+              />
+            </button>
+          </th>
+          <th
+            class="ui-table__header__cell"
+          >
+            <button
+              class="ui-table__header__cell__non-sortable"
+            >
+              Image header
+            </button>
+          </th>
+          <th
+            class="ui-table__header__cell"
+          >
+            <button
+              class="ui-table__header__cell__sortable"
+            >
+              Date header
+              <span
+                class="vtmx-arrow-up-down-fill "
+                style="font-size: 24px;"
+              />
+            </button>
+          </th>
+          <th
+            class="ui-table__header__cell"
+          >
+            <button
+              class="ui-table__header__cell__sortable"
+            >
+              Boolean header
+              <span
+                class="vtmx-arrow-up-down-fill "
+                style="font-size: 24px;"
+              />
+            </button>
+          </th>
+          <th
+            class="ui-table__header__cell"
+          >
+            <button
+              class="ui-table__header__cell__sortable"
+            >
+              Status header
+              <span
+                class="vtmx-arrow-up-down-fill "
+                style="font-size: 24px;"
+              />
+            </button>
+          </th>
+          <th
+            class="ui-table__header__cell"
+          >
+            <button
+              class="ui-table__header__cell__sortable"
+            >
+              ProgressBar header
+              <span
+                class="vtmx-arrow-up-down-fill "
+                style="font-size: 24px;"
+              />
+            </button>
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="ui-table__body"
+      >
+        <tr
+          class="ui-table__body__row"
+        >
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            string_1
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            1
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <p>
+              <img
+                alt="this is an image cell"
+                class="image_cell"
+                src="https://contents.mediadecathlon.com/p2307093/k$95b46fa90b4ee1ffcacc8fdff4371e30/sq/ballon-ligue-1-uber-eats-officiel-club-2022-2023-fifa-basic-hybride-taille-5.jpg?f=3000x3000"
+              />
+            </p>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <p>
+              01/01/2024
+            </p>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <span
+              class="vtmn-tag vtmn-tag_variant--decorative_brick vtmn-tag_size--medium "
+            >
+              FALSE
+            </span>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <span
+              class="vtmn-tag vtmn-tag_variant--decorative_emerald vtmn-tag_size--medium "
+            >
+              STATUS 1
+            </span>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <div
+              class="progressbar__container"
+            >
+              <span
+                class="typo_text-3"
+              >
+                50
+                 / 
+                100
+              </span>
+              <progress
+                aria-labelledby="progress-bar-text"
+                max="100"
+                value="50"
+              />
+            </div>
+          </td>
+        </tr>
+        <tr
+          class="ui-table__body__row"
+        >
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            string_2
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            2
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <p>
+              <img
+                alt="this is an image cell"
+                class="image_cell"
+                src="https://contents.mediadecathlon.com/p2561179/k$ecc2eabea2a4941ff4b1bfaeca52b963/sq/velo-ville-electrique-a-moteur-automatique-owuru-cadre-bas-ld-920-e.jpg?f=3000x3000"
+              />
+            </p>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <p>
+              02/01/2024
+            </p>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <span
+              class="vtmn-tag vtmn-tag_variant--decorative_jade vtmn-tag_size--medium "
+            >
+              TRUE
+            </span>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <span
+              class="vtmn-tag vtmn-tag_variant--decorative_gold vtmn-tag_size--medium "
+            >
+              STATUS 2
+            </span>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <div
+              class="progressbar__container"
+            >
+              <span
+                class="typo_text-3"
+              >
+                50
+                 / 
+                200
+              </span>
+              <progress
+                aria-labelledby="progress-bar-text"
+                max="200"
+                value="50"
+              />
+            </div>
+          </td>
+        </tr>
+        <tr
+          class="ui-table__body__row"
+        >
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            string_3
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            3
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <p>
+              <img
+                alt="this is an image cell"
+                class="image_cell"
+                src="https://contents.mediadecathlon.com/p2530633/k$449fdab7d9007d9bae37e8ae17ea3cb3/sq/ballon-de-handball-molten-hx3400-ffhb-taille-2.jpg?f=3000x3000"
+              />
+            </p>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <p>
+              03/01/2024
+            </p>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <span
+              class="vtmn-tag vtmn-tag_variant--decorative_brick vtmn-tag_size--medium "
+            >
+              FALSE
+            </span>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <span
+              class="vtmn-tag vtmn-tag_variant--decorative_cobalt vtmn-tag_size--medium "
+            >
+              STATUS 3
+            </span>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <div
+              class="progressbar__container"
+            >
+              <span
+                class="typo_text-3"
+              >
+                150
+                 / 
+                200
+              </span>
+              <progress
+                aria-labelledby="progress-bar-text"
+                max="200"
+                value="150"
+              />
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`uiTable > snapshot testing > should render correctly and match the snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <table
+        class="ui-table"
+      >
+        <thead
+          class="ui-table__header typo_text-3"
+        >
+          <tr>
+            <th
+              class="ui-table__header__cell"
+            >
+              <button
+                class="ui-table__header__cell__sortable"
+              >
+                String header
+                <span
+                  class="vtmx-arrow-up-down-fill "
+                  style="font-size: 24px;"
+                />
+              </button>
+            </th>
+            <th
+              class="ui-table__header__cell"
+            >
+              <button
+                class="ui-table__header__cell__sortable"
+              >
+                Number header
+                <span
+                  class="vtmx-arrow-up-down-fill "
+                  style="font-size: 24px;"
+                />
+              </button>
+            </th>
+            <th
+              class="ui-table__header__cell"
+            >
+              <button
+                class="ui-table__header__cell__non-sortable"
+              >
+                Image header
+              </button>
+            </th>
+            <th
+              class="ui-table__header__cell"
+            >
+              <button
+                class="ui-table__header__cell__sortable"
+              >
+                Date header
+                <span
+                  class="vtmx-arrow-up-down-fill "
+                  style="font-size: 24px;"
+                />
+              </button>
+            </th>
+            <th
+              class="ui-table__header__cell"
+            >
+              <button
+                class="ui-table__header__cell__sortable"
+              >
+                Boolean header
+                <span
+                  class="vtmx-arrow-up-down-fill "
+                  style="font-size: 24px;"
+                />
+              </button>
+            </th>
+            <th
+              class="ui-table__header__cell"
+            >
+              <button
+                class="ui-table__header__cell__sortable"
+              >
+                Status header
+                <span
+                  class="vtmx-arrow-up-down-fill "
+                  style="font-size: 24px;"
+                />
+              </button>
+            </th>
+            <th
+              class="ui-table__header__cell"
+            >
+              <button
+                class="ui-table__header__cell__sortable"
+              >
+                ProgressBar header
+                <span
+                  class="vtmx-arrow-up-down-fill "
+                  style="font-size: 24px;"
+                />
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="ui-table__body"
+        >
+          <tr
+            class="ui-table__body__row"
+          >
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              string_1
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              1
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <p>
+                <img
+                  alt="this is an image cell"
+                  class="image_cell"
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+                />
+              </p>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <p>
+                01/01/2024
+              </p>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <span
+                class="vtmn-tag vtmn-tag_variant--decorative_brick vtmn-tag_size--medium "
+              >
+                FALSE
+              </span>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <span
+                class="vtmn-tag vtmn-tag_variant--decorative_emerald vtmn-tag_size--medium "
+              >
+                STATUS 1
+              </span>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <div
+                class="progressbar__container"
+              >
+                <span
+                  class="typo_text-3"
+                >
+                  50
+                   / 
+                  100
+                </span>
+                <progress
+                  aria-labelledby="progress-bar-text"
+                  max="100"
+                  value="50"
+                />
+              </div>
+            </td>
+          </tr>
+          <tr
+            class="ui-table__body__row"
+          >
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              string_2
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              2
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <p>
+                <img
+                  alt="this is an image cell"
+                  class="image_cell"
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+                />
+              </p>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <p>
+                02/01/2024
+              </p>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <span
+                class="vtmn-tag vtmn-tag_variant--decorative_jade vtmn-tag_size--medium "
+              >
+                TRUE
+              </span>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <span
+                class="vtmn-tag vtmn-tag_variant--decorative_gold vtmn-tag_size--medium "
+              >
+                STATUS 2
+              </span>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <div
+                class="progressbar__container"
+              >
+                <span
+                  class="typo_text-3"
+                >
+                  50
+                   / 
+                  200
+                </span>
+                <progress
+                  aria-labelledby="progress-bar-text"
+                  max="200"
+                  value="50"
+                />
+              </div>
+            </td>
+          </tr>
+          <tr
+            class="ui-table__body__row"
+          >
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              string_3
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              3
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <p>
+                <img
+                  alt="this is an image cell"
+                  class="image_cell"
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+                />
+              </p>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <p>
+                03/01/2024
+              </p>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <span
+                class="vtmn-tag vtmn-tag_variant--decorative_brick vtmn-tag_size--medium "
+              >
+                FALSE
+              </span>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <span
+                class="vtmn-tag vtmn-tag_variant--decorative_cobalt vtmn-tag_size--medium "
+              >
+                STATUS 3
+              </span>
+            </td>
+            <td
+              class="ui-table__body__cell typo_text-3"
+            >
+              <div
+                class="progressbar__container"
+              >
+                <span
+                  class="typo_text-3"
+                >
+                  150
+                   / 
+                  200
+                </span>
+                <progress
+                  aria-labelledby="progress-bar-text"
+                  max="200"
+                  value="150"
+                />
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>,
+  "container": <div>
+    <table
+      class="ui-table"
+    >
+      <thead
+        class="ui-table__header typo_text-3"
+      >
+        <tr>
+          <th
+            class="ui-table__header__cell"
+          >
+            <button
+              class="ui-table__header__cell__sortable"
+            >
+              String header
+              <span
+                class="vtmx-arrow-up-down-fill "
+                style="font-size: 24px;"
+              />
+            </button>
+          </th>
+          <th
+            class="ui-table__header__cell"
+          >
+            <button
+              class="ui-table__header__cell__sortable"
+            >
+              Number header
+              <span
+                class="vtmx-arrow-up-down-fill "
+                style="font-size: 24px;"
+              />
+            </button>
+          </th>
+          <th
+            class="ui-table__header__cell"
+          >
+            <button
+              class="ui-table__header__cell__non-sortable"
+            >
+              Image header
+            </button>
+          </th>
+          <th
+            class="ui-table__header__cell"
+          >
+            <button
+              class="ui-table__header__cell__sortable"
+            >
+              Date header
+              <span
+                class="vtmx-arrow-up-down-fill "
+                style="font-size: 24px;"
+              />
+            </button>
+          </th>
+          <th
+            class="ui-table__header__cell"
+          >
+            <button
+              class="ui-table__header__cell__sortable"
+            >
+              Boolean header
+              <span
+                class="vtmx-arrow-up-down-fill "
+                style="font-size: 24px;"
+              />
+            </button>
+          </th>
+          <th
+            class="ui-table__header__cell"
+          >
+            <button
+              class="ui-table__header__cell__sortable"
+            >
+              Status header
+              <span
+                class="vtmx-arrow-up-down-fill "
+                style="font-size: 24px;"
+              />
+            </button>
+          </th>
+          <th
+            class="ui-table__header__cell"
+          >
+            <button
+              class="ui-table__header__cell__sortable"
+            >
+              ProgressBar header
+              <span
+                class="vtmx-arrow-up-down-fill "
+                style="font-size: 24px;"
+              />
+            </button>
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="ui-table__body"
+      >
+        <tr
+          class="ui-table__body__row"
+        >
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            string_1
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            1
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <p>
+              <img
+                alt="this is an image cell"
+                class="image_cell"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+              />
+            </p>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <p>
+              01/01/2024
+            </p>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <span
+              class="vtmn-tag vtmn-tag_variant--decorative_brick vtmn-tag_size--medium "
+            >
+              FALSE
+            </span>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <span
+              class="vtmn-tag vtmn-tag_variant--decorative_emerald vtmn-tag_size--medium "
+            >
+              STATUS 1
+            </span>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <div
+              class="progressbar__container"
+            >
+              <span
+                class="typo_text-3"
+              >
+                50
+                 / 
+                100
+              </span>
+              <progress
+                aria-labelledby="progress-bar-text"
+                max="100"
+                value="50"
+              />
+            </div>
+          </td>
+        </tr>
+        <tr
+          class="ui-table__body__row"
+        >
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            string_2
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            2
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <p>
+              <img
+                alt="this is an image cell"
+                class="image_cell"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+              />
+            </p>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <p>
+              02/01/2024
+            </p>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <span
+              class="vtmn-tag vtmn-tag_variant--decorative_jade vtmn-tag_size--medium "
+            >
+              TRUE
+            </span>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <span
+              class="vtmn-tag vtmn-tag_variant--decorative_gold vtmn-tag_size--medium "
+            >
+              STATUS 2
+            </span>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <div
+              class="progressbar__container"
+            >
+              <span
+                class="typo_text-3"
+              >
+                50
+                 / 
+                200
+              </span>
+              <progress
+                aria-labelledby="progress-bar-text"
+                max="200"
+                value="50"
+              />
+            </div>
+          </td>
+        </tr>
+        <tr
+          class="ui-table__body__row"
+        >
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            string_3
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            3
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <p>
+              <img
+                alt="this is an image cell"
+                class="image_cell"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+              />
+            </p>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <p>
+              03/01/2024
+            </p>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <span
+              class="vtmn-tag vtmn-tag_variant--decorative_brick vtmn-tag_size--medium "
+            >
+              FALSE
+            </span>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <span
+              class="vtmn-tag vtmn-tag_variant--decorative_cobalt vtmn-tag_size--medium "
+            >
+              STATUS 3
+            </span>
+          </td>
+          <td
+            class="ui-table__body__cell typo_text-3"
+          >
+            <div
+              class="progressbar__container"
+            >
+              <span
+                class="typo_text-3"
+              >
+                150
+                 / 
+                200
+              </span>
+              <progress
+                aria-labelledby="progress-bar-text"
+                max="200"
+                value="150"
+              />
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

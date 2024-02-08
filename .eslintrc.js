@@ -84,12 +84,21 @@ module.exports = {
         'import/no-unresolved': 'off',
         'import/no-absolute-path': 'off',
         'import/namespace': 'off',
+
       },
     },
     {
       files: ['*.ts', '*.tsx'],
       extends: ['plugin:@nx/typescript'],
       rules: {},
+    },
+    {
+      files: ['*.test.ts', '*.test.tsx'],
+      extends: ['plugin:@nx/typescript', 'plugin:react/recommended'],
+      rules: {
+        'react/jsx-key': 'off',
+        'react/react-in-jsx-scope': 'off'
+      },
     },
     {
       files: ['*.js', '*.jsx'],
