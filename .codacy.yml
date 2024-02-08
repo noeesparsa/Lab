@@ -10,3 +10,4 @@ exclude_paths:
   - '**/tests/**'
   - '**/.eslintrc.js'
   - '**/*.config.*'
+  - '**/*.md'
