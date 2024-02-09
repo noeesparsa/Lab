@@ -13,6 +13,11 @@
     "test:all:ci": "nx run-many --target test --configuration=ci"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "6.5.1",
+    "@fortawesome/free-brands-svg-icons": "6.5.1",
+    "@fortawesome/free-regular-svg-icons": "6.5.1",
+    "@fortawesome/free-solid-svg-icons": "6.5.1",
+    "@fortawesome/react-fontawesome": "0.2.0",
     "@swc/helpers": "0.5.3",
     "@tanstack/react-table": "8.11.7",
     "@vtmn/css-design-tokens": "1.1.2",
