@@ -7,8 +7,9 @@
   "targets": {
     "lint": {
       "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["{projectRoot}/**/*.{ts,tsx,js,jsx}"],
+        "lintFilePatterns": ["libs/react-components/**/*.{ts,tsx,js,jsx}"],
         "quiet": true,
         "cache": true,
         "cacheLocation": "./node_modules/.cache/eslint"

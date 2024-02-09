@@ -45,10 +45,10 @@ describe(`uiSidebarMenu`, (): void => {
   });
 
   describe('component testing', (): void => {
-    const menuButton1Text = 'Button 1';
-    const menuButton2Text = 'Button 2';
-    const menuButton1Title = 'Button 1 title';
-    const menuButton2Title = 'Button 2 title';
+    const menuButton1Text: string = 'Button 1';
+    const menuButton2Text: string = 'Button 2';
+    const menuButton1Title: string = 'Button 1 title';
+    const menuButton2Title: string = 'Button 2 title';
 
     beforeEach((): void => {
       menuButtons = [
