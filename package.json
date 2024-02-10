@@ -98,7 +98,7 @@
     "husky": "9.0.7",
     "jest-extended": "4.0.2",
     "jsdom": "24.0.0",
-    "lint-staged": "15.2.0",
+    "lint-staged": "15.2.1",
     "nx": "18.0.4",
     "nx-stylelint": "17.1.1",
     "pokeapi-typescript": "2.1.0",
