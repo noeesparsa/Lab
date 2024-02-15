@@ -33,7 +33,7 @@
     "luxon": "3.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-i18next": "14.0.2",
+    "react-i18next": "14.0.3",
     "react-router-dom": "6.22.0",
     "reset-css": "5.0.2",
     "tslib": "2.6.2"
