@@ -100,7 +100,7 @@
     "jsdom": "24.0.0",
     "lint-staged": "15.2.2",
     "nx": "18.0.4",
-    "nx-stylelint": "17.1.1",
+    "nx-stylelint": "17.1.2",
     "pokeapi-typescript": "2.1.0",
     "prettier": "3.2.5",
     "sass": "1.70.0",
