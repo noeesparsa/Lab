@@ -1,0 +1,3 @@
+export const POKEMON_CONSTANTS = {
+  MAX_POKEMON_NUMBER: 1025,
+};

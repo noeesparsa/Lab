@@ -81,5 +81,6 @@ export default defineConfig({
     logHeapUsage: true,
     silent: true,
     setupFiles: [`./test-setup.mjs`],
+    passWithNoTests: false,
   },
 });

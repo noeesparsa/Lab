@@ -11,7 +11,9 @@ export function Navbar({ logoUrl, buttons }: IProps): React.JSX.Element {
   return (
     <div className={cx('navbar')}>
       <div className={cx('navbar__logo__container')}>
-        <img src={logoUrl} alt="applicaiton logo" className={cx('navbar__logo__image')} />
+        <a href="/">
+          <img src={logoUrl} alt="applicaiton logo" className={cx('navbar__logo__image')} />
+        </a>
         <p className={cx('navbar__logo__title', 'typo_text-2')}>Laboratory</p>
       </div>
       <div className={cx('navbar__buttons__container')}>

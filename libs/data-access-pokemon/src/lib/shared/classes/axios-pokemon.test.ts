@@ -1,7 +1,7 @@
 import { AxiosRequestConfig, AxiosResponse } from 'axios';
-import { SpyInstance, vi } from 'vitest';
+import { MockInstance, vi } from 'vitest';
+import { axiosPokemonInstance } from '../constants';
 import { AxiosPokemon } from './axios-pokemon';
-import { axiosPokemonInstance } from './constants';
 
 describe(`AxiosRed`, (): void => {
   let url: string;
@@ -18,7 +18,7 @@ describe(`AxiosRed`, (): void => {
   });
 
   describe(`get()`, (): void => {
-    let spyOnAxiosGet: SpyInstance;
+    let spyOnAxiosGet: MockInstance;
 
     beforeEach((): void => {
       spyOnAxiosGet = vi.spyOn(axiosPokemonInstance, `get`).mockResolvedValue(axiosResponse);
@@ -57,7 +57,7 @@ describe(`AxiosRed`, (): void => {
   });
 
   describe(`post()`, (): void => {
-    let spyOnAxiosPost: SpyInstance;
+    let spyOnAxiosPost: MockInstance;
     let data: Record<string, unknown>;
 
     beforeEach((): void => {
@@ -98,7 +98,7 @@ describe(`AxiosRed`, (): void => {
   });
 
   describe(`patch()`, (): void => {
-    let spyOnAxiosPatch: SpyInstance;
+    let spyOnAxiosPatch: MockInstance;
     let data: Record<string, unknown>;
 
     beforeEach((): void => {
@@ -139,7 +139,7 @@ describe(`AxiosRed`, (): void => {
   });
 
   describe(`put()`, (): void => {
-    let spyOnAxiosPut: SpyInstance;
+    let spyOnAxiosPut: MockInstance;
     let data: Record<string, unknown>;
 
     beforeEach((): void => {
@@ -180,7 +180,7 @@ describe(`AxiosRed`, (): void => {
   });
 
   describe(`delete()`, (): void => {
-    let spyOnDelete: SpyInstance;
+    let spyOnDelete: MockInstance;
 
     beforeEach((): void => {
       spyOnDelete = vi.spyOn(axiosPokemonInstance, `delete`).mockResolvedValue(axiosResponse);

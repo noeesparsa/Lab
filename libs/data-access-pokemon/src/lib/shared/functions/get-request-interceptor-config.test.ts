@@ -1,6 +1,5 @@
 import { InternalAxiosRequestConfig } from 'axios';
 import { mock } from 'vitest-mock-extended';
-import { ENVIRONMENT } from '../environment/environment';
 import { getRequestInterceptorConfig } from './get-request-interceptor-config';
 
 describe(`getRequestInterceptorConfig()`, (): void => {
@@ -11,12 +10,6 @@ describe(`getRequestInterceptorConfig()`, (): void => {
   });
 
   describe(`when the request interceptor config is use`, (): void => {
-    it(`should set the base url`, (): void => {
-      const result: InternalAxiosRequestConfig = getRequestInterceptorConfig(config);
-
-      expect(result.baseURL).toBe(ENVIRONMENT.baseServerUrl);
-    });
-
     it(`should set the header "Content-Type" to send JSON`, (): void => {
       const result: InternalAxiosRequestConfig = getRequestInterceptorConfig(config);
 

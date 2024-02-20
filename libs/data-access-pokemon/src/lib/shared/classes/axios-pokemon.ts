@@ -1,5 +1,5 @@
 import { AxiosRequestConfig, AxiosResponse } from 'axios';
-import { axiosPokemonInstance } from './constants';
+import { axiosPokemonInstance } from '../constants';
 
 export class AxiosPokemon {
   public static get<T>(url: string, config?: AxiosRequestConfig): Promise<AxiosResponse<T>> {

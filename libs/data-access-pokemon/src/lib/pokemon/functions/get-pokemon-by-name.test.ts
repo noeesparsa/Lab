@@ -2,26 +2,26 @@ import { AxiosResponse } from 'axios';
 import { IPokemon } from 'pokeapi-typescript';
 import { MockInstance } from 'vitest';
 import { mock } from 'vitest-mock-extended';
-import { getPokemonById } from './get-pokemon-by-id';
-import { AxiosPokemon } from '@lab/util-api-pokemon';
+import { AxiosPokemon } from '../../shared';
+import { getPokemonByName } from './get-pokemon-by-name';
 
-describe(`getPokemonById()`, (): void => {
+describe(`getPokemonByName()`, (): void => {
   let axiosPokemonGetSpy: MockInstance;
   let axiosResponse: AxiosResponse<IPokemon>;
-  let pokemonId: number;
+  let pokemonName: string;
 
   beforeEach((): void => {
     axiosResponse = mock<AxiosResponse<IPokemon>>();
     axiosPokemonGetSpy = vi.spyOn(AxiosPokemon, `get`).mockResolvedValue(axiosResponse);
-    pokemonId = 1;
+    pokemonName = 'pokemonName';
   });
 
-  it(`should fetch the pokemon for a given id`, async (): Promise<void> => {
+  it(`should fetch the pokemon for a given name`, async (): Promise<void> => {
     expect.assertions(1);
 
-    await getPokemonById(pokemonId);
+    await getPokemonByName(pokemonName);
 
-    expect(axiosPokemonGetSpy).toHaveBeenCalledExactlyOnceWith(`pokemon/${pokemonId}`);
+    expect(axiosPokemonGetSpy).toHaveBeenCalledExactlyOnceWith(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
   });
 
   describe(`when the pokeapi is up`, (): void => {
@@ -32,10 +32,10 @@ describe(`getPokemonById()`, (): void => {
       axiosResponse.data = pokemon;
     });
 
-    it(`should return the correct pokemon for the given id`, async (): Promise<void> => {
+    it(`should return the correct pokemon for the given name`, async (): Promise<void> => {
       expect.assertions(1);
 
-      const result: IPokemon = await getPokemonById(pokemonId);
+      const result: IPokemon = await getPokemonByName(pokemonName);
 
       expect(result).toBe(pokemon);
     });
@@ -49,7 +49,7 @@ describe(`getPokemonById()`, (): void => {
     it(`should throw`, async (): Promise<void> => {
       expect.assertions(1);
 
-      await expect(getPokemonById(pokemonId)).rejects.toThrow(new Error(`get error`));
+      await expect(getPokemonByName(pokemonName)).rejects.toThrow(new Error(`get error`));
     });
   });
 });

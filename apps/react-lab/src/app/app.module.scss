@@ -5,6 +5,8 @@
   display: flex;
   flex-direction: column;
   background: var(--vtmn-semantic-color_background-tertiary);
+  overflow-y: hidden;
+
 
   &__header {
     z-index: 20;
@@ -14,18 +16,20 @@
     display: flex;
     flex-direction: row;
     height: calc(100vh - 4rem);
+    overflow-y: hidden;
   }
 
   &__menu {
     z-index: 10;
-    overflow-y: auto;
+    overflow-y: hidden;
     flex-shrink: 1;
     background: var(--vtmn-semantic-color_background-primary);
   }
 
   &__content {
-    overflow-y: auto;
+    overflow-y: hidden;
     flex-shrink: 12;
+    width: 100%;
   }
 }
 

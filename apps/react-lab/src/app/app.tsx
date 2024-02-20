@@ -2,6 +2,7 @@ import classNames from 'classnames/bind';
 import { Outlet } from 'react-router-dom';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import styles from './app.module.scss';
+import { SIDEBAR_MENU } from './constants/sidebar-menu.constants';
 import { IconLink, Navbar, SidebarMenu } from '@lab/react-components';
 
 export default function App(): React.JSX.Element {
@@ -25,9 +26,9 @@ export default function App(): React.JSX.Element {
 
       <div className={cx('skeleton__container')}>
         <nav className={cx('skeleton__menu')}>
-          <SidebarMenu menuButtonsProperties={[]} menuButtonTitle="toogle menu" />
+          <SidebarMenu menuButtonsProperties={SIDEBAR_MENU} menuButtonTitle="toogle menu" />
         </nav>
-        <main className={cx('skeleton__content')}>
+        <main className={cx('skeleton__content', 'typo_text-3')}>
           <Outlet />
         </main>
       </div>
