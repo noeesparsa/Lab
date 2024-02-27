@@ -1,7 +1,9 @@
+@import '../../../breakpoints';
+
 .pokedex__container {
-  padding: var(--vtmn-spacing_2);
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 15rem));
+  padding: var(--vtmn-spacing_1) var(--vtmn-spacing_2) var(--vtmn-spacing_1) var(--vtmn-spacing_2);
   display: grid;
-  grid-template-columns: repeat(4, auto);
   gap: var(--vtmn-spacing_2);
   justify-content: center;
 }

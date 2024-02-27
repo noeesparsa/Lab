@@ -1,9 +1,9 @@
 import { AxiosResponse } from 'axios';
 import { AxiosPokemon, POKEMON_CONSTANTS } from '../../shared';
-import { IPokemonLite, IPokemonLitePaginated } from '../interfaces';
+import { INamedResource, IPokeAPiResourceList } from '../../shared/interfaces';
 
-export async function getAllPokemonLite(): Promise<IPokemonLite[]> {
-  const response: AxiosResponse<IPokemonLitePaginated> = await AxiosPokemon.get<IPokemonLitePaginated>(
+export async function getAllPokemonLite(): Promise<INamedResource[]> {
+  const response: AxiosResponse<IPokeAPiResourceList> = await AxiosPokemon.get<IPokeAPiResourceList>(
     `https://pokeapi.co/api/v2/pokemon?limit=${POKEMON_CONSTANTS.MAX_POKEMON_NUMBER}&offset=0`,
   );
 

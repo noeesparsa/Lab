@@ -1,11 +1,12 @@
 import { useQuery } from '@tanstack/react-query';
-import { VtmnSkeleton } from '@vtmn/react';
+import { VtmnCard, VtmnSkeleton } from '@vtmn/react';
 import classNames from 'classnames/bind';
+import { PokemonTypeTag } from '../pokemon-type-tag/pokemon-type-tag';
 import styles from './pokedex-entry.module.scss';
-import { getPokemonByName } from '@lab/data-access-pokemon';
+import { IPokemonType, getPokemonByName } from '@lab/data-access-pokemon';
 
 interface IProps {
-  name: string;
+  readonly name: string;
 }
 export function PokedexEntry({ name }: IProps): React.JSX.Element {
   const cx = classNames.bind(styles);
@@ -16,16 +17,21 @@ export function PokedexEntry({ name }: IProps): React.JSX.Element {
     queryFn: () => getPokemonByName(name),
   });
 
-  return isLoading ? (
-    <VtmnSkeleton />
-  ) : (
-    <div className={cx('pokedex-card')}>
-      <div className={'typo_title-5'}>{pokemon.name.toUpperCase()}</div>
-      <ul className={cx('pokedex-card__types')}>
-        {pokemon.types.map((type, idx) => (
-          <li key={`type-${idx}`}>{type.type.name}</li>
-        ))}
-      </ul>
-    </div>
-  );
+  if (isLoading) {
+    return <VtmnSkeleton className={cx('pokedex-card__loading')} />;
+  } else {
+    return (
+      <VtmnCard
+        title={pokemon.name.toUpperCase()}
+        img={<img src={pokemon.sprites.other.dream_world.front_default} alt={pokemon.name} />}
+        variant="side-image"
+      >
+        <ul className={cx('pokedex-card__types')}>
+          {pokemon.types.map((type: IPokemonType) => (
+            <PokemonTypeTag key={type.type.name} type={type.type.name} />
+          ))}
+        </ul>
+      </VtmnCard>
+    );
+  }
 }

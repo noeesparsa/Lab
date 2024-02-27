@@ -1,6 +1,6 @@
 import { AxiosResponse } from 'axios';
-import { IPokemon } from 'pokeapi-typescript';
 import { AxiosPokemon } from '../../shared';
+import { IPokemon } from '../interfaces';
 
 /**
  * Return a Pokémon base on an ID.
