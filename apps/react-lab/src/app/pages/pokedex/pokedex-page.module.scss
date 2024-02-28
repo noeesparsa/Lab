@@ -14,3 +14,11 @@
   display: flex;
   justify-content: center;
 }
+
+.test {
+  padding: var(--vtmn-spacing_4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

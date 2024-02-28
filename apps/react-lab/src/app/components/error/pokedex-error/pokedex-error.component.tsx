@@ -1,9 +1,9 @@
 import { VtmnCard } from '@vtmn/react';
 
 interface IProps {
-  readonly title: string;
+  readonly error: Error | null;
 }
 
-export function PokedexError({ title }: IProps): React.JSX.Element {
-  return <VtmnCard title={title}>Error</VtmnCard>;
+export function PokedexError({ error }: IProps): React.JSX.Element {
+  return <VtmnCard title={error?.name ?? 'No information'}> {error?.message ?? ''}</VtmnCard>;
 }
