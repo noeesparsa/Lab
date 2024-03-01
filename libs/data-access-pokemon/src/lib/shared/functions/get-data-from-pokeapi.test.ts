@@ -1,7 +1,7 @@
 import axios, { AxiosResponse } from 'axios';
-import { IPokemon } from 'pokeapi-typescript';
 import { MockInstance, expectTypeOf } from 'vitest';
 import { mock } from 'vitest-mock-extended';
+import { IPokemon } from '../../pokemon/interfaces';
 import { getDataFromPokeapi } from './get-data-from-pokeapi';
 
 describe('getDataFromPokeapi()', (): void => {

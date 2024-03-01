@@ -1,6 +1,5 @@
 import { AxiosResponse } from 'axios';
-import { AxiosPokemon } from '../../shared';
-import { IPokeAPiResourceList } from '../../shared/interfaces';
+import { AxiosPokemon, IPokeAPiResourceList } from '../../shared';
 
 export async function getPokemonLitePaginated({ pageParam }: { pageParam: any }): Promise<IPokeAPiResourceList> {
   const response: AxiosResponse<IPokeAPiResourceList> = await AxiosPokemon.get<IPokeAPiResourceList>(

@@ -1,13 +1,6 @@
 @import '../../../breakpoints';
 
 .pokedex-card {
-  background: #0074D9;
-  border-radius: 10px ;
-  display: flex;
-  flex-direction: column;
-  padding: var(--vtmn-spacing_2);
-
-
   &__types {
     display: flex;
     flex-direction: row;
@@ -19,6 +12,7 @@
   }
 }
 
-:global(.vtmn-skeleton).pokedex-card__loading {
-  height: 11rem;
+:global(.vtmn-card).pokedex-card {
+  height: 8rem;;
+
 }

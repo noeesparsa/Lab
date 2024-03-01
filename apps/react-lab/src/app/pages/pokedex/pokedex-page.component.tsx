@@ -1,7 +1,6 @@
 import { useInfiniteQuery } from '@tanstack/react-query';
 import { VtmnButton } from '@vtmn/react';
 import classNames from 'classnames/bind';
-import { isNil } from 'lodash';
 import { useEffect, useState } from 'react';
 import { PokedexError } from '../../components/error/pokedex-error/pokedex-error.component';
 import { Loading } from '../../components/loading/loading.component';
@@ -15,7 +14,7 @@ export function PokedexPage(): React.JSX.Element {
   const [pokemonNames, setPokemonNames] = useState<INamedApiResource[]>([]);
   const [pageCount, setPageCount] = useState<number>(0);
 
-  const { data, error, isLoading, fetchNextPage, hasNextPage, isFetching, isFetchingNextPage } = useInfiniteQuery({
+  const { data, error, fetchNextPage, hasNextPage, status, isFetchingNextPage, isFetching } = useInfiniteQuery({
     staleTime: Infinity,
     initialPageParam: { limit: 20, offset: 0 },
     queryKey: ['allPokemon'],
@@ -33,40 +32,42 @@ export function PokedexPage(): React.JSX.Element {
   });
 
   const handleClick = (): void => {
-    fetchNextPage().then(() => setPageCount(prevState => prevState + 1));
+    fetchNextPage().then(() => setPageCount((prevState: number) => prevState + 1));
   };
 
   useEffect((): void => {
-    if (data) {
-      setPokemonNames(previousValue => [...previousValue, ...data.pages.at(pageCount).results]);
+    if (data && data.pages[pageCount]) {
+      const newFetchedResources: INamedApiResource[] = data.pages[pageCount]?.results ?? [];
+      setPokemonNames((fetchedResources: INamedApiResource[]) => [...fetchedResources, ...newFetchedResources]);
     }
   }, [data, pageCount]);
 
   const content = (): React.JSX.Element => {
-    if (isLoading) {
-      return <Loading />;
-    } else if (error || isNil(data)) {
-      return (
-        <div className={cx('test')}>
-          <PokedexError error={error}></PokedexError>
-        </div>
-      );
-    } else {
-      return (
-        <>
-          <div className={cx('pokedex__container')}>
-            {pokemonNames.map((pokemon: INamedApiResource, pokemonIdx: number) => (
-              <PokedexEntry key={`pokemon-${pokemonIdx}`} name={pokemon.name} />
-            ))}
-          </div>
+    switch (status) {
+      case 'success':
+        return (
+          <>
+            <div className={cx('pokedex__container')}>
+              {pokemonNames.map((pokemon: INamedApiResource, pokemonIdx: number) => (
+                <PokedexEntry key={`pokemon-${pokemonIdx}`} url={pokemon.url} name={pokemon.name} />
+              ))}
+            </div>
 
-          <div className={cx('load-more--button')}>
-            <VtmnButton onClick={() => handleClick()} disabled={!hasNextPage || isFetchingNextPage}>
-              {isFetching ? 'Loading more...' : hasNextPage ? 'Load more' : 'Nothing more to fetch'}
-            </VtmnButton>
+            <div className={cx('load-more--button')}>
+              <VtmnButton onClick={() => handleClick()} disabled={!hasNextPage || isFetchingNextPage}>
+                {isFetching ? 'Loading more...' : hasNextPage ? 'Load more' : 'Nothing more to fetch'}
+              </VtmnButton>
+            </div>
+          </>
+        );
+      case 'pending':
+        return <Loading />;
+      case 'error':
+        return (
+          <div className={cx('test')}>
+            <PokedexError error={error}></PokedexError>
           </div>
-        </>
-      );
+        );
     }
   };
 
