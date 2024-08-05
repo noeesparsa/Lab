@@ -1,1 +1,4 @@
-export * from './get-data-from-pokeapi';
+export * from './functions';
+export * from './constants';
+export * from './classes';
+export * from './interfaces';

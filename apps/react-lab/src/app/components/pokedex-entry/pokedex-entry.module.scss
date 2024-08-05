@@ -1,0 +1,17 @@
+@import '../../../breakpoints';
+
+.pokedex-card {
+  &__types {
+    display: flex;
+    flex-direction: row;
+    gap: var(--vtmn-spacing_2);
+  }
+
+  &__image {
+    justify-self: end;
+  }
+}
+
+:global(.vtmn-card).pokedex-card {
+  height: 8rem;;
+}

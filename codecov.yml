@@ -16,10 +16,6 @@ coverage:
         paths:
           - 'libs/react-components/src/lib'
         target: 90%
-      libs_util-api-pokemon:
-        paths:
-          - 'libs/util-api-pokemon/src/lib'
-        target: 90%
       libs_data-access-pokemon:
         paths:
           - 'libs/data-access-pokemon/src/lib'
@@ -53,10 +49,6 @@ component_management:
       name: libs_react-components
       paths:
         - libs/react-components/src/lib
-    - component_id: libs_util-api-pokemon
-      name: libs_util-api-pokemon
-      paths:
-        - libs/util-api-pokemon/src/lib
     - component_id: libs_data-access-pokemon
       name: libs_data-access-pokemon
       paths:

@@ -41,7 +41,6 @@
     "paths": {
       "@lab/data-access-pokemon": ["libs/data-access-pokemon/src/index.ts"],
       "@lab/react-components": ["libs/react-components/src/index.ts"],
-      "@lab/util-api-pokemon": ["libs/util-api-pokemon/src/index.ts"],
       "@lab/util-i18n": ["libs/util-i18n/src/index.ts"]
     }
   },

@@ -1,0 +1,24 @@
+@import '../../../breakpoints';
+
+.pokedex__container {
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 15rem));
+  padding: var(--vtmn-spacing_1) var(--vtmn-spacing_2) var(--vtmn-spacing_1) var(--vtmn-spacing_2);
+  display: grid;
+  gap: var(--vtmn-spacing_2);
+  justify-content: center;
+}
+
+.load-more--button {
+  padding-bottom: var(--vtmn-spacing_2);
+  padding-top: var(--vtmn-spacing_2);
+  display: flex;
+  justify-content: center;
+}
+
+.test {
+  padding: var(--vtmn-spacing_4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

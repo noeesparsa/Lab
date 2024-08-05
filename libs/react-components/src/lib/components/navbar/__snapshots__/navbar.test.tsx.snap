@@ -11,11 +11,15 @@ exports[`navbar > snapshot testing > should render correctly and match the snaps
         <div
           class="navbar__logo__container"
         >
-          <img
-            alt="applicaiton logo"
-            class="navbar__logo__image"
-            src="path/to/logo"
-          />
+          <a
+            href="/"
+          >
+            <img
+              alt="applicaiton logo"
+              class="navbar__logo__image"
+              src="path/to/logo"
+            />
+          </a>
           <p
             class="navbar__logo__title typo_text-2"
           >
@@ -35,11 +39,15 @@ exports[`navbar > snapshot testing > should render correctly and match the snaps
       <div
         class="navbar__logo__container"
       >
-        <img
-          alt="applicaiton logo"
-          class="navbar__logo__image"
-          src="path/to/logo"
-        />
+        <a
+          href="/"
+        >
+          <img
+            alt="applicaiton logo"
+            class="navbar__logo__image"
+            src="path/to/logo"
+          />
+        </a>
         <p
           class="navbar__logo__title typo_text-2"
         >

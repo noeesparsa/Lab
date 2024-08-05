@@ -17,11 +17,15 @@ exports[`App > Snapshot testing > should render correctly and match the snapshot
             <div
               class="_navbar__logo__container_75281d"
             >
-              <img
-                alt="applicaiton logo"
-                class="_navbar__logo__image_75281d"
-                src="/logo.png"
-              />
+              <a
+                href="/"
+              >
+                <img
+                  alt="applicaiton logo"
+                  class="_navbar__logo__image_75281d"
+                  src="/logo.png"
+                />
+              </a>
               <p
                 class="_navbar__logo__title_75281d _typo_text-2_75281d"
               >
@@ -105,11 +109,24 @@ exports[`App > Snapshot testing > should render correctly and match the snapshot
               </div>
               <ul
                 class="_menu__list_9aebe9 _flex_9aebe9"
-              />
+              >
+                <li>
+                  <button
+                    class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--stretched _button--collapsed_14eaf3   "
+                    title="navigate to pokedex"
+                  >
+                    <span
+                      class="vtmx-award-fill "
+                      data-testid="react--components--sidebar--menu--button--icon"
+                      style="font-size: 24px;"
+                    />
+                  </button>
+                </li>
+              </ul>
             </div>
           </nav>
           <main
-            class="_skeleton__content_4dcdac"
+            class="_skeleton__content_4dcdac _typo_text-3_4dcdac"
           />
         </div>
       </div>
@@ -128,11 +145,15 @@ exports[`App > Snapshot testing > should render correctly and match the snapshot
           <div
             class="_navbar__logo__container_75281d"
           >
-            <img
-              alt="applicaiton logo"
-              class="_navbar__logo__image_75281d"
-              src="/logo.png"
-            />
+            <a
+              href="/"
+            >
+              <img
+                alt="applicaiton logo"
+                class="_navbar__logo__image_75281d"
+                src="/logo.png"
+              />
+            </a>
             <p
               class="_navbar__logo__title_75281d _typo_text-2_75281d"
             >
@@ -216,11 +237,24 @@ exports[`App > Snapshot testing > should render correctly and match the snapshot
             </div>
             <ul
               class="_menu__list_9aebe9 _flex_9aebe9"
-            />
+            >
+              <li>
+                <button
+                  class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--stretched _button--collapsed_14eaf3   "
+                  title="navigate to pokedex"
+                >
+                  <span
+                    class="vtmx-award-fill "
+                    data-testid="react--components--sidebar--menu--button--icon"
+                    style="font-size: 24px;"
+                  />
+                </button>
+              </li>
+            </ul>
           </div>
         </nav>
         <main
-          class="_skeleton__content_4dcdac"
+          class="_skeleton__content_4dcdac _typo_text-3_4dcdac"
         />
       </div>
     </div>

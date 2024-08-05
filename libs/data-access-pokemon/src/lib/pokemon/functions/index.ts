@@ -1,1 +1,2 @@
-export * from './get-pokemon-by-id';
+export * from './get-pokemon';
+export * from './get-pokemons-lite';
