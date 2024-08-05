@@ -1,7 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { VtmnCard, VtmnSkeleton } from '@vtmn/react';
 import classNames from 'classnames/bind';
-import { PokedexEntryError } from '../error/pokedex-entry-error/pokedex-entry-error.component';
 import { PokemonTypeTag } from '../pokemon-type-tag/pokemon-type-tag';
 import styles from './pokedex-entry.module.scss';
 import { IPokemonType, getPokemon } from '@lab/data-access-pokemon';
@@ -25,7 +24,11 @@ export function PokedexEntry({ url, name }: IProps): React.JSX.Element {
 
   switch (status) {
     case 'error':
-      return <PokedexEntryError error={error} />;
+      return (
+        <VtmnCard title={error.name ?? 'No information'} variant="side-image" className={cx('pokedex-card')}>
+          {error.message ?? ''}
+        </VtmnCard>
+      );
     case 'pending':
       return (
         <VtmnCard title="" variant="side-image" className={cx('pokedex-card')} img={<VtmnSkeleton shape="avatar" />}>
@@ -37,7 +40,7 @@ export function PokedexEntry({ url, name }: IProps): React.JSX.Element {
       return (
         <VtmnCard
           title={pokemon.name.toUpperCase()}
-          img={<img src={pokemon.sprites.other.dream_world.front_default} alt={pokemon.name} />}
+          img={<img src={pokemon.sprites.other['official-artwork'].front_default} alt={pokemon.name} />}
           variant="side-image"
           className={cx('pokedex-card')}
         >
