@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
         with:
           fetch-depth: 0
       - name: Nx set shas
-        uses: nrwl/nx-set-shas@v4
+        uses: nrwl/nx-set-shas@be2a36618456ad6f3abf921eb24900817da1af6b # v4
 
       - name: Install dependencies
         run: npm i
@@ -26,7 +26,7 @@ jobs:
         run: npx nx affected -t test --parallel=3 --configuration=ci
 
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@ab904c41d6ece82784817410c45d8b8c02684457 # v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
 
