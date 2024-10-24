@@ -113,7 +113,7 @@
     "stylelint-scss": "5.3.2",
     "ts-node": "10.9.2",
     "typescript": "5.3.3",
-    "vite": "5.0.12",
+    "vite": "5.4.9",
     "vite-plugin-eslint": "1.8.1",
     "vite-plugin-html": "3.2.2",
     "vite-plugin-pwa": "0.17.5",
